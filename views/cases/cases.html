@@ -1,0 +1,167 @@
+{{extend '../layout/layout.html'}} {{block "head"}}
+<title>有方医疗_派CT_口腔诊所引流利器</title>
+<style>
+    body {
+        background: #f7f8fa;
+    }
+
+    .page-banner {
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 240px;
+        margin: 0 auto;
+        background-image: url("/public/img/cases/lcal.jpg");
+        position: relative;
+    }
+
+    .page-banner span a {
+        font-size: 42px;
+        font-weight: 700;
+        color: #ffffff;
+        position: absolute;
+        top: 96px;
+        left: 40px;
+    }
+
+    .case-wrap {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .case-bar {
+        width: 1200px;
+        height: 637px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bar-left {
+        border-radius: 8px;
+        background-color: #ffffff;
+        width: 270px;
+        height: 480px;
+        padding: 16px 16px;
+    }
+
+    .bar-left ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bar-left ul li a {
+        border-radius: 8px;
+        text-indent: 32px;
+        color: rgba(0, 0, 0, .5);
+        display: block;
+        font-size: 18px;
+        height: 64px;
+        line-height: 64px;
+    }
+
+    .bar-left li a:hover {
+        background-color: #eee;
+        color: #000000;
+    }
+
+    .bar-left li.active a {
+        background-color: #095bfb;
+        color: #ffffff;
+    }
+
+    .bar-right {
+
+        width: 906px;
+
+    }
+
+    .bar-right .tab-pane {
+        display: none;
+    }
+
+    .bar-right .active {
+        display: block;
+    }
+
+    .bar-right .bar-title {
+        box-sizing: content-box;
+        width: 826px;
+        height: 40px;
+        padding: 16px 40px;
+        background-color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+    }
+
+    .bar-right .bar-view {
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 750px) {
+        .page-banner {
+            background-position: top;
+            height: 192px;
+        }
+
+        .page-banner span a {
+            top: 69px;
+        }
+    }
+</style>
+{{/block}}
+
+{{block "content"}}
+<div class="content">
+    <div class="page-banner">
+        <span><a href="">临床案例</a></span>
+    </div>
+    <div class="case-wrap">
+        <div class="case-bar">
+            <div class="bar-left">
+                <ul id="tablist">
+                    <li class="active"><a href="?bzlist=kouqiangzhengji">口腔正畸</a></li>
+                    <li><a href="?bzlist=kouqiangzhongzhi">口腔种植</a></li>
+                    <li><a href="#kouqianghemianwaike">口腔颌面外科</a></li>
+                    <li><a href="#duosyzsy">多生牙/阻生牙</a></li>
+                    <li><a href="#yatiyasuibing">牙体牙髓病</a></li>
+                    <li><a href="#yazhoubing">牙周病</a></li>
+                    <li><a href="#niexiaheguanjie">颞下颌关节</a></li>
+            </div>
+            <div class="bar-right">
+                <div class="bar-title">
+                    <div class="tab-pane active">口腔正畸</div>
+                    <div class="tab-pane">口腔种植</div>
+                    <div class="tab-pane">口腔颌面外科</div>
+                    <div class="tab-pane">多生牙/阻生牙</div>
+                    <div class="tab-pane">牙体牙髓病</div>
+                    <div class="tab-pane">牙周病</div>
+                    <div class="tab-pane">颞下颌关节</div>
+                </div>
+                <div class="bar-view">
+                    {{name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}}
+
+{{block "script"}}
+<script>
+    $(document).ready(function () {
+
+        $("#tablist li").each(function (index) {
+            $(this).click(function () {
+                $(".active").removeClass("active");
+                $(".bar-left li").eq(index).addClass("active");
+                $(".bar-right .tab-pane").eq(index).addClass("active");
+            });
+        });
+    })
+</script>
+{{/block}}
