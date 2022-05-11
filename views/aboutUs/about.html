@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <!--设置IE浏览器的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--设定网页视口大小，即网页宽度默认为设备宽度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>网页标题</title>
+
+    <style>
+        .factory {
+            background-image: url("../../public/img/aboutUs/about/factory.jpg");
+            background-repeat: no-repeat;
+            background-size: auto 480px;
+            background-position: top;
+            height: 480px;
+            position: relative;
+        }
+        
+        .factory h3 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            position: absolute;
+            top: 96px;
+            left: 1.0667rem;
+        }
+        
+        .factory p {
+            font-size: 18px;
+            color: #fff;
+            opacity: 0.6;
+            position: absolute;
+            top: 180px;
+            left: 1.0667rem;
+        }
+        
+        .factory #tabs {
+            position: absolute;
+            bottom: 0;
+            width: 10rem;
+            height: 58px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .factory .factorytabs {
+            width: 8rem;
+            margin: 0 auto;
+            height: 58px;
+        }
+        
+        .factory #tabs a {
+            color: #222;
+            font-size: 17px;
+            display: inline-block;
+            width: 100px;
+            height: 58px;
+            line-height: 58px;
+            text-decoration: none;
+            margin-right: 0.04rem;
+            text-align: center;
+        }
+        /* 正文部分 */
+        
+        .subject {
+            padding-top: 96px;
+            padding-bottom: 96px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .subject .subjectbody {
+            width: 10rem;
+            /* height: 670px; */
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .subject p {
+            font-size: 20px;
+            color: #999;
+        }
+        
+        .subject h1 {
+            color: rgb(5, 8, 39);
+            padding-bottom: 96px;
+            font-size: 36px;
+            font-weight: 700;
+            margin-left: 1.0667rem;
+        }
+        
+        .subject .H5Z5 {
+            color: rgb(5, 8, 39);
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .subject .subjectleft {
+            margin-left: 1.0667rem;
+        }
+        
+        .subject .subjectsvgs {
+            width: 3.84rem;
+        }
+        
+        .subject .subjectsvg {
+            text-align: center;
+            display: inline-block;
+            margin-right: 60px;
+        }
+        
+        .subject .txt1 {
+            margin-top: 50px;
+            width: 4.64rem;
+        }
+        
+        .subject .txt2 {
+            margin-top: 40px;
+            width: 4.64rem;
+        }
+        
+        .subject .txt3 {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            width: 4.64rem;
+        }
+        
+        .subject .yuanbian {
+            width: 80px;
+            height: 24px;
+            font-size: 15px;
+            padding: 10px 30px 10px 30px;
+            border: 1px solid #333;
+            border-radius: 100px;
+            box-sizing: content-box;
+            line-height: 24px;
+            background-color: #fff;
+        }
+        
+        .subject #history {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .subject #lunbotu {
+            width: 3.8533rem;
+            height: 500px;
+            background-color: aqua;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        /* 愿望与使命 */
+        
+        .duty h1 {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .duty h4 {
+            font-size: 18px;
+            color: #999;
+            text-align: center;
+        }
+        
+        .duty .dutybody {
+            width: 8rem;
+            margin: 0 auto;
+        }
+        
+        .duty .callhope {
+            width: 8rem;
+            height: 1.92rem;
+            margin-top: 50px;
+            margin-bottom: 24px;
+        }
+        
+        .duty .callhope img {
+            width: 8rem;
+            height: 1.92rem;
+        }
+        
+        .duty .callduty {
+            width: 8rem;
+            height: 1.92rem;
+        }
+        
+        .duty .callduty img {
+            width: 8rem;
+            height: 1.92rem;
+        }
+        /* 价值观 */
+        
+        .values {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+        
+        .values h1 {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .values h4 {
+            font-size: 18px;
+            color: #999;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .values .valuebody {
+            width: 8rem;
+            height: 2.6667rem;
+            margin: 0 auto;
+            padding-left: .24rem;
+        }
+        
+        .values .value1 {
+            width: 3.68rem;
+            height: 2.6667rem;
+            display: inline-block;
+            margin-right: 12px;
+            position: relative;
+        }
+        
+        .values .value1 img {
+            width: 3.68rem;
+            height: 2.6667rem;
+            border-radius: 10px;
+        }
+        
+        .values .value2 {
+            width: 3.68rem;
+            height: 2.6667rem;
+            display: inline-block;
+            margin-left: 12px;
+            position: relative;
+        }
+        
+        .values .value2 img {
+            width: 3.68rem;
+            height: 2.6667rem;
+            border-radius: 10px;
+        }
+        
+        .values h6 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #222;
+            position: absolute;
+            left: 32px;
+            top: 32px;
+        }
+        
+        .values p {
+            color: #a1a1a1;
+            font-size: 20px;
+            position: absolute;
+            left: 32px;
+            bottom: 32px;
+            right: 23%;
+        }
+    </style>
+
+    <!-- <link
+      rel="stylesheet"
+      href="./a750.css"
+      media="only screen and (max-width: 750px)"
+    /> -->
+    <script src="../../public/js/flexible.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 图片区域 -->
+    <section class="factory">
+        <h3>企业简介</h3>
+        <p>盛德有邻 · 大方无隅</p>
+        <div id="tabs">
+            <div class="factorytabs">
+                <a href="">企业简介</a>
+                <a href="">发展历程</a>
+                <a href="">资质荣誉</a>
+                <a href="">联系我们</a>
+                <a href="">加入有方</a>
+            </div>
+        </div>
+    </section>
+    <!-- 正文部分 -->
+    <section class="subject">
+        <h1>专注CT影像技术的<br />创新高科技企业</h1>
+        <div class="subjectbody">
+            <div class="subjectleft">
+                <div class="subjectsvgs">
+                    <div class="subjectsvg">
+                        <img src="../../public/img/aboutUs/about/caps.svg" alt="" />
+                        <p class="H5Z5">知名专家团队</p>
+                    </div>
+                    <div class="subjectsvg">
+                        <img src="../../public/img/aboutUs/about/newmouthCt.svg" alt="" />
+                        <p class="H5Z5">新一代CT方案</p>
+                    </div>
+                    <div class="subjectsvg">
+                        <img src="../../public/img/aboutUs/about/ironArm.svg" alt="" />
+                        <p class="H5Z5">自主研发生产</p>
+                    </div>
+                </div>
+                <p class="txt1">
+                    有方（合肥）医疗科技有限公司（Yofo Medical Technology Co., Ltd.） 成立于2017年7月，由斯坦福大学、硅谷海归团队、医学影像及肿瘤放射治疗领域国际知名专家创立， 致力于自主研发功能多变、经济实惠的新一代专科CBCT成像技术， 研发产品主要面向不同临床应用的专科CBCT系统整机及相关临床软件， 是一家集研、产、销为一体的高端医疗器械制造商。
+                </p>
+                <p class="txt2">
+                    公司以健康中国国家战略发展需求为目标，以临床需求为导向， 以国际一流为标杆，通过培养、引进与合作，汇聚国际医学影像高端人才， 致力于自主研发、生产、销售覆盖影像诊断和治疗全过程的高端医疗产品， 并提供创新医疗影像信息化解决方案。
+                </p>
+                <p class="txt3">
+                    研发产品主要有：牙科CBCT、乳腺专用CBCT、脑部CBCT、 肢端CBCT、移动CBCT、车载CBCT、C型臂CBCT、放疗辅助CBCT等。
+                </p>
+
+                <button class="yuanbian">
+            <div href="" id="history"
+              >发展历程 <span class="glyphicon glyphicon-chevron-right"></span
+            ></div>
+          </button>
+            </div>
+            <!-- 轮播图 -->
+            <div id="lunbotu"></div>
+        </div>
+    </section>
+    <!-- 愿望与使命 -->
+    <section class="duty">
+        <h1>愿景与使命</h1>
+        <h4>Vision and mission</h4>
+        <div class="dutybody">
+            <div class="callhope">
+                <img src="../../public/img/aboutUs/about/hope.png" alt="" />
+            </div>
+            <div class="callduty">
+                <img src="../../public/img/aboutUs/about/duty.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- 有方价值观 -->
+    <section class="values">
+        <h1>有方价值观</h1>
+        <h4>Values</h4>
+        <div class="valuebody">
+            <div class="value1">
+                <img src="../../public/img/aboutUs/about/virtue.png" alt="" />
+                <h6>盛德有邻</h6>
+                <p>
+                    尊重个人价值和个性发展，重视科学规律与团队协作， 不因短期利益降低企业品格， 坚信惠及普通大众的长远目标是企业生命力的源泉。
+                </p>
+            </div>
+            <div class="value2">
+                <img src="../../public/img/aboutUs/about/earth.png" alt="" />
+                <h6>大方无隅</h6>
+                <p>
+                    脚踏实地，正视差距，明确优势，不自傲，不自卑， 不因利益而随波逐流，不因自尊而固执己见。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+
+</html>
