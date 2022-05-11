@@ -30,36 +30,35 @@ app.engine('html', require('express-art-template'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use(expressSession({
-    name: "YOFO",
-    secret: 'secret',
-    cookie: {
-        maxAge: 1000 * 60 * 3,
-    },
-    resave: false,
-    rolling: true,
-    saveUninitialized: false,
-}));
-
-
-// 这里引用router文件夹下的js文件，test只是临时写的
-app.use(test)
+// app.use(expressSession({
+//     name: "YOFO",
+//     secret: 'secret',
+//     cookie: {
+//         maxAge: 1000 * 60 * 3,
+//     },
+//     resave: false,
+//     rolling: true,
+//     saveUninitialized: false,
+// }));
+app.use(router)
 
 
 
 
-app.all('*', function (req, res) {
-    res.render('404.html', {
-        title: '您要找的页面不存在'
-    })
-});
 
-app.use((err, req, res, next) => {
-    res.json({
-        code: 2002,
-        message: err.message
-    })
-})
+
+// app.all('*', function (req, res) {
+//     res.render('404.html', {
+//         title: '您要找的页面不存在'
+//     })
+// });
+
+// app.use((err, req, res, next) => {
+//     res.json({
+//         code: 2002,
+//         message: err.message
+//     })
+// })
 
 app.listen(3000, () => {
     console.log("3000端口已启用")

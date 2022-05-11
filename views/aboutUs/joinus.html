@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <title>Document</title>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/public/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="top-banner">
+          <p>加入有方</p>
+          <p>在这里，成就更好的自己！</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="top-nav">
+          <ul>
+            <li><a href="#">企业简介</a></li>
+            <li><a href="#">发展历程</a></li>
+            <li><a href="#">资质荣誉</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入有方</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <aside>
+          <div class="left col-md-3">
+            <p>职位筛选</p>
+            <p>职位类别</p>
+            <button class="btn1" type="submit">全部职位</button>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+            <p>所在城市</p>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+          </div>
+          <div class="right col-md-9">
+            <div class="row">
+              <div
+                class="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                        style="text-decoration: none"
+                      >
+                      <span class="job">区域销售经理</span>
+                    <p class="icon"> 
+                         <span class="iconfont">&#xe727; </span>
+                         <span class="iconfont">&#xe61c; </span>
+                    </p>
+                        
+                   <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="panel-collapse collapse in"
+                    role="tabpanel"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                      <span class="job">研发项目经理</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 研发类 </span>
+                           <span class="iconfont">&#xe61c; 合肥市</span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                      <span class="job">口腔医学经理</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 市场类  </span>
+                           <span class="iconfont">&#xe61c; 合肥市</span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingThree"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                      <span class="job">嵌入式软件工程师（FPGA）</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 研发类</span>
+                           <span class="iconfont">&#xe61c; 合肥市 </span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingFour"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                      <span class="job">高级软件工程师</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 研发类 </span>
+                           <span class="iconfont">&#xe61c; 合肥市</span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingFive"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                      <span class="job">机械工程师</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 研发类</span>
+                           <span class="iconfont">&#xe61c; 合肥市 </span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseSix"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingSix"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingSeven">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                      >
+                      <span class="job">算法工程师</span>
+                    <p class="icon"> 
+                         <span class="iconfont">&#xe727; 研发类 </span>
+                         <span class="iconfont">&#xe61c; 合肥市</span>
+                    </p>
+                        
+                   <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseSeven"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingSeven"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingEight">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseEight"
+                        aria-expanded="false"
+                        aria-controls="collapseEight"
+                      >
+                      <span class="job">质检员</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 研发类</span>
+                           <span class="iconfont">&#xe61c; 合肥市 </span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseEight"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingEight"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingNine">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseNine"
+                        aria-expanded="false"
+                        aria-controls="collapseNine"
+                      >
+                      <span class="job">华南区售后服务工程师</span>
+                      <p class="icon"> 
+                           <span class="iconfont">&#xe727; 市场类 研发类 </span>
+                           <span class="iconfont">&#xe61c; 东菀市 合肥市 </span>
+                      </p>
+                          
+                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapseNine"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingNine"
+                  >
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
