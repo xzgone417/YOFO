@@ -1,0 +1,510 @@
+/* 导航条 */
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    padding-top: 60px;
+}
+
+body {
+    height: 80px;
+    position: relative;
+    border-color: #e7e7e7;
+    font: normal 14px/1.5 PingFang SC, Lantinghei SC, Microsoft YaHei, HanHei SC, Helvetica Neue, Open Sans, Arial, Hiragino Sans GB, 微软雅黑, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+.box {
+    /* 这里固定到顶部需要修改 */
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.yf_navbar {
+    /* background-color: transparent;
+    border-color: #e7e7e7;
+    height: 80px; */
+    height: 85px;
+    border: 0;
+    background-color: #fff;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 98;
+}
+
+#bs-example-navbar-collapse-1 {
+    background-color: #fff;
+}
+
+.yf_navbar .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 80px;
+}
+
+.yf_navbar .navbar-brand:hover,
+.yf_navbar .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.yf_navbar .navbar-text {
+    color: #777;
+}
+
+.yf_navbar .navbar-nav>li>a {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 1000;
+    color: #262626;
+    /* padding: 0; */
+    /* padding: 5px; */
+    padding: 15px 5px;
+}
+
+.yf_navbar .navbar-nav>li>a:hover,
+.yf_navbar .navbar-nav>li>a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 3px solid blue;
+}
+
+.yf_navbar .navbar-nav>.active>a,
+.yf_navbar .navbar-nav>.active>a:hover,
+.yf_navbar .navbar-nav>.active>a:focus {
+    color: #555;
+    /* active当前激活的样式 */
+    /* background-color: #e7e7e7; */
+    border-bottom: 3px solid red;
+}
+
+.yf_navbar .navbar-nav>.disabled>a,
+.yf_navbar .navbar-nav>.disabled>a:hover,
+.yf_navbar .navbar-nav>.disabled>a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.yf_navbar .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 25px;
+}
+
+.yf_navbar .navbar-toggle:hover,
+.yf_navbar .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.yf_navbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.yf_navbar .navbar-collapse,
+.yf_navbar .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.yf_navbar .navbar-nav>.open>a,
+.yf_navbar .navbar-nav>.open>a:hover,
+.yf_navbar .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .yf_navbar .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+    .yf_navbar .navbar-nav .open .dropdown-menu>li>a:hover,
+    .yf_navbar .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .yf_navbar .navbar-nav .open .dropdown-menu>.active>a,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.yf_navbar .navbar-link {
+    color: #777;
+}
+
+.yf_navbar .navbar-link:hover {
+    color: #333;
+}
+
+.yf_navbar .btn-link {
+    color: #777;
+}
+
+.yf_navbar .btn-link:hover,
+.yf_navbar .btn-link:focus {
+    color: #333;
+}
+
+.yf_navbar .btn-link[disabled]:hover,
+fieldset[disabled] .yf_navbar .btn-link:hover,
+.yf_navbar .btn-link[disabled]:focus,
+fieldset[disabled] .yf_navbar .btn-link:focus {
+    color: #ccc;
+}
+
+
+/* 字体图标 */
+
+.iconfont {
+    font-size: 16px!important;
+    font-weight: 700;
+    color: #262626!important;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand>img {
+    width: 106px;
+    height: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50%;
+    margin-top: -50%;
+}
+
+
+/* 导航条下拉框 */
+
+.dropdown .dropdown-menu {
+    display: none;
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: 100px;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu>li>a {
+    display: block;
+    line-height: 48px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+/* 顶部图片 */
+
+.page-banner {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 480px;
+    position: relative;
+    /* background-image: url(../img/index/milestone_img1.jpg); */
+    display: block;
+    /* padding-top: 100px; */
+}
+
+.ft-white {
+    color: rgb(255, 255, 255);
+    z-index: 99;
+}
+
+.pl20 {
+    padding-left: 20px;
+    padding-top: 90px;
+}
+
+.pt {
+    padding-top: 150px;
+}
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: block;
+}
+
+
+/* 资质与荣誉 */
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.ft48 {
+    font-size: 48px;
+}
+
+.ft-bold {
+    font-weight: 700;
+}
+
+
+/* 硕果累累*/
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.opacity6 {
+    opacity: 0.6;
+}
+
+.ft18 {
+    font-size: 18px;
+}
+
+
+/* 专利数 */
+
+.pt96 {
+    padding-top: 96px;
+}
+
+.bg-light {
+    background: #f7f8fa;
+}
+
+.pb96 {
+    padding-bottom: 96px;
+}
+
+
+/* L4部分的布局 */
+
+.wrap:after {
+    clear: both;
+    content: "";
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+/* li内容 */
+
+.nl-li2>li {
+    width: 50%;
+}
+
+.nl-li2>li,
+.nl-li3>li,
+.nl-li4>li {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.clearfix {
+    height: 500px;
+    background-color: #000
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left,
+.li-left>li {
+    float: left;
+}
+
+.zl-wrap li>div {
+    background: #fff;
+    box-sizing: border-box;
+    height: 400px;
+    padding: 40px;
+    position: relative;
+}
+
+
+/* li里文字 */
+
+.ft-blue {
+    color: rgb(35, 98, 246);
+}
+
+.ft42 {
+    font-size: 42px;
+}
+
+.ft-bold {
+    font-weight: 700;
+}
+
+.ft24 {
+    font-size: 24px;
+}
+
+.zl-wrap__inner {
+    clear: both;
+    height: 80px;
+    left: 40px;
+    overflow-y: auto;
+    position: absolute;
+    right: 40px;
+    top: 70%;
+}
+
+.disabled,
+.opacity5 {
+    opacity: 0.5;
+}
+
+.ft18 {
+    font-size: 18px;
+}
+
+.ft-yellow {
+    color: rgb(251, 198, 9);
+}
+
+
+/* 轮播图 */
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 1500px;
+    height: 100%;
+    padding: 30px 0 60px 0;
+    /* width: 100%; */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    transform: scale(1);
+}
+
+.certbook-wrap {
+    margin-top: 96px;
+    /* text-align: center; */
+}
+
+
+/* 轮播上文字 */
+
+.text-center {
+    text-align: center;
+}
+
+.ft36 {
+    font-size: 36px;
+}
+
+.ft-bold {
+    font-weight: 700;
+}
+
+.ft-gray {
+    color: rgb(153, 153, 153);
+}
+
+.ptpb {
+    padding-top: 96px;
+    padding-bottom: 45px;
+}
+
+
+/* 轮播图背景 */
+
+.lb_bj {
+    background: url(./img/index/lb_bj.jpg) no-repeat;
+    /* height: 100%;
+    width: 100%; */
+}
+
+
+/* 轮播图小点 */
+
+
+/* 媒体查询 */
+
+
+/* @media screen and (max-width: 768px) {
+    .wrap {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 1200px) {
+    .wrap {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrap {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrap {
+        width: 100%;
+    }
+}
