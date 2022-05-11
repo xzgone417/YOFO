@@ -1,5 +1,7 @@
 {{extend '../layout/layout.html'}} {{block "head"}}
 <title>有方医疗_派CT_口腔诊所引流利器</title>
+<link rel="stylesheet" href="/node_modules/fancybox/dist/css/jquery.fancybox.css" media="screen">
+<script src="/public/js/flexible.js"></script>
 <style>
     body {
         background: #f7f8fa;
@@ -31,11 +33,11 @@
     }
 
     .case-bar {
-        width: 1200px;
+        width: 9rem;
         height: 637px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 
     .bar-left {
@@ -72,29 +74,53 @@
     }
 
     .bar-right {
-
-        width: 906px;
+        margin-left: 30px;
+        width: 5.38rem;
 
     }
 
-    .bar-right .tab-pane {
-        display: none;
-    }
 
-    .bar-right .active {
-        display: block;
-    }
 
     .bar-right .bar-title {
+        overflow: hidden;
         box-sizing: content-box;
-        width: 826px;
         height: 40px;
         padding: 16px 40px;
         background-color: #fff;
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 10px;
+        /* display: flex;
+        justify-content: space-between; */
+        border-radius: 8px;
 
+    }
+
+    .bar-right .tab-pane {
+        display: inline-block;
+        line-height: 50px;
+    }
+
+    .bar-right span {
+        float: right;
+    }
+
+    .bar-right span a {
+        border-color: rgba(0, 0, 0, .3);
+        color: rgba(0, 0, 0, .3);
+        border: 1px solid rgba(0, 0, 0, .3);
+        border-radius: 100px;
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+
+    .bar-right span a.active {
+        border-color: #095bfb;
+        ;
+        color: #095bfb;
+        ;
+        border: 1px solid #095bfb;
+        ;
     }
 
     .bar-right .bar-view {
@@ -102,7 +128,44 @@
         background-color: #fff;
     }
 
+
+    .bar-right .bar-view {
+        padding: 30px 48px;
+    }
+
+    .bar-right .bar-view::after {
+
+        content: "";
+        display: block;
+        padding: 45px 0px;
+    }
+
+    .bar-right .bar-view h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .bar-right .bar-view p {
+        color: #050827;
+        margin-top: 15px;
+        opacity: 0.5;
+    }
+
+    .bar-right .bar-view a img {
+        display: inline-block;
+        width: 2.0267rem;
+        height: 1.3333rem;
+        box-sizing: border-box;
+        padding: 8px 8px;
+    }
+
+    .case-meun,
+    #tap {
+        display: none;
+    }
+
     @media screen and (max-width: 750px) {
+
         .page-banner {
             background-position: top;
             height: 192px;
@@ -110,6 +173,131 @@
 
         .page-banner span a {
             top: 69px;
+        }
+
+        #tap .case-meun {
+            display: block;
+        }
+
+
+        .case-wrap {
+            margin: 0;
+        }
+
+        .bar-right,
+        .case-bar {
+            width: 100%;
+            display: block;
+            margin: 0;
+        }
+
+        /* 
+        #tap .case-meun {
+            display: inline-block;
+        } */
+
+        #tap .case-meun span {
+            font-size: 14px;
+            border-radius: 4px;
+            text-align: center;
+            display: inline-block;
+            width: 43%;
+            height: .8rem;
+            line-height: .8rem;
+            background-color: #f7f8fa;
+            overflow: hidden;
+
+        }
+
+        #tap {
+            text-align: center;
+            display: block;
+            padding: 16px 16px;
+            background-color: #fff;
+        }
+
+        .case-wrap #tap ul li,
+        #tap2 span {
+            font-size: .2rem;
+            margin-top: .2784rem;
+            width: 46%;
+            height: .8533rem;
+            line-height: .8533rem;
+            display: inline-block;
+
+
+        }
+
+        .case-wrap #tap ul li a,
+        #tap2 span a {
+            padding: 0 .2773rem;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: rgba(0, 0, 0, .5);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        .case-wrap #tap ul li a:hover,
+        #tap2 span a:hover {
+            color: #000;
+            background-color: #eee;
+
+        }
+
+        .case-wrap #tap ul li.active a,
+        #tap2 span a.active {
+            color: #ffffff;
+            background-color: #095bfb;
+            border-radius: 8px;
+        }
+
+        #tap2 {
+            display: inline-block;
+        }
+
+        #tap ul,
+        #tap {
+            overflow: hidden;
+        }
+
+        #tap ul li,
+        #tap2 span {
+            float: left;
+            margin: 0 .17rem;
+            margin-top: .2rem;
+        }
+
+        #tap ul,
+        #tap2 {
+            margin: 0 auto;
+            width: 8.76rem;
+
+        }
+
+        .case-bar {
+            margin-top: .48rem;
+
+        }
+
+        .bar-right .bar-title {
+            margin: 0;
+        }
+
+        .bar-right .bar-view .post-photos a img {
+            width: 8.4rem;
+            height: 5.6rem;
+            border-radius: .35rem;
+            display: inline-block;
+        }
+
+        .bar-left,
+        .bar-title span,
+        #tap ul,
+        #tap2,
+        .bar-title {
+            display: none;
         }
     }
 </style>
@@ -121,47 +309,157 @@
         <span><a href="">临床案例</a></span>
     </div>
     <div class="case-wrap">
-        <div class="case-bar">
-            <div class="bar-left">
-                <ul id="tablist">
-                    <li class="active"><a href="?bzlist=kouqiangzhengji">口腔正畸</a></li>
-                    <li><a href="?bzlist=kouqiangzhongzhi">口腔种植</a></li>
-                    <li><a href="#kouqianghemianwaike">口腔颌面外科</a></li>
-                    <li><a href="#duosyzsy">多生牙/阻生牙</a></li>
-                    <li><a href="#yatiyasuibing">牙体牙髓病</a></li>
-                    <li><a href="#yazhoubing">牙周病</a></li>
-                    <li><a href="#niexiaheguanjie">颞下颌关节</a></li>
+
+        <div id="tap">
+            <div class="case-meun">
+                <span class="tinyhand1">{{caselist.type[0]}}</span>
+                <span class="tinyhand2">{{caselist.name}}</span>
             </div>
+            <ul id="tab1" class="{{caselist.type[0]}}">
+                <li><a href="?bzlist=kouqiangzhengji">口腔正畸</a></li>
+                <li><a href="?bzlist=kouqiangzhongzhi">口腔种植</a></li>
+                <li><a href="?bzlist=kouqianghemianwaike">口腔颌面外科</a></li>
+                <li><a href="?bzlist=duosyzsy">多生牙/阻生牙</a></li>
+                <li><a href="?bzlist=yatiyasuibing">牙体牙髓病</a></li>
+                <li><a href="?bzlist=yazhoubing">牙周病</a></li>
+                <li><a href="?bzlist=niexiaheguanjie">颞下颌关节</a></li>
+
+            </ul>
+            <div id="tap2">
+                {{each type value i}}
+                <span>
+                    <a href="?bzlist={{type[i].href}}">{{type[i].name}}</a>
+                </span>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="case-bar">
+
+            <div class="bar-left">
+                <ul id="tablist" class="{{caselist.type[0]}}">
+                    <li><a href="?bzlist=kouqiangzhengji">口腔正畸</a></li>
+                    <li><a href="?bzlist=kouqiangzhongzhi">口腔种植</a></li>
+                    <li><a href="?bzlist=kouqianghemianwaike">口腔颌面外科</a></li>
+                    <li><a href="?bzlist=duosyzsy">多生牙/阻生牙</a></li>
+                    <li><a href="?bzlist=yatiyasuibing">牙体牙髓病</a></li>
+                    <li><a href="?bzlist=yazhoubing">牙周病</a></li>
+                    <li><a href="?bzlist=niexiaheguanjie">颞下颌关节</a></li>
+                </ul>
+
+            </div>
+
             <div class="bar-right">
                 <div class="bar-title">
-                    <div class="tab-pane active">口腔正畸</div>
-                    <div class="tab-pane">口腔种植</div>
-                    <div class="tab-pane">口腔颌面外科</div>
-                    <div class="tab-pane">多生牙/阻生牙</div>
-                    <div class="tab-pane">牙体牙髓病</div>
-                    <div class="tab-pane">牙周病</div>
-                    <div class="tab-pane">颞下颌关节</div>
+                    <div class="tab-pane">{{caselist.type[0]}}</div>
+                    <span>
+                        {{each type value i}}
+                        <a href="?bzlist={{type[i].href}}">{{type[i].name}}</a>
+                        {{/each}}
+                    </span>
                 </div>
                 <div class="bar-view">
-                    {{name}}
+                    <h4>{{caselist.name}}</h4>
+                    <p style="font-size: 15px;">{{caselist.name}}</p>
+                    <div class="post-photos">
+                        {{each caselist.img value i}}
+                        <a href="{{caselist.img[i]}}" data-fancybox-group="gallery">
+                            <img src="{{caselist.img[i]}}" alt="" loading="lazy">
+                        </a>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 {{/block}}
 
 {{block "script"}}
 <script>
     $(document).ready(function () {
-
         $("#tablist li").each(function (index) {
-            $(this).click(function () {
-                $(".active").removeClass("active");
-                $(".bar-left li").eq(index).addClass("active");
-                $(".bar-right .tab-pane").eq(index).addClass("active");
-            });
+            if ($(".bar-left li").eq(index).text() == $("#tablist").attr("class")) {
+                $(this).addClass("active");
+            }
+            var href = "?bzlist=" + $(".bar-right span a").attr("class");
         });
+
+        console.log(location.search)
+        $(".bar-right span a").each(function (index) {
+            var href = $(".bar-right span a").eq(index).attr("href");
+            //console.log(href)
+            // $(this).addClass("active")
+            if (href == location.search) {
+                console.log(this)
+                $(this).addClass("active")
+            }
+        });
+
+        $("#tab1 li").each(function (index) {
+            if ($(".bar-left li").eq(index).text() == $("#tab1").attr("class")) {
+                $(this).addClass("active");
+            }
+            var href = "?bzlist=" + $(".bar-right span a").attr("class");
+        });
+
+        $("#tap2 span a").each(function (index) {
+            var href = $("#tap2 span a").eq(index).attr("href");
+            //console.log(href)
+            // $(this).addClass("active")
+            if (href == location.search) {
+                console.log(this)
+                $(this).addClass("active")
+            }
+        });
+        $('[data-fancybox-group="gallery"]').fancybox({
+
+            //'loop': true, 
+            toolbar: true,
+            // 'autoDimensions': true,
+            'padding': 0,
+            'margin': 0,
+            'cyclic': true,
+            //'overlayOpacity': 0.5,
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'speedIn': 600,
+            'speedOut': 200,
+            'overlayShow': false,
+            'autoSize': true,
+        })
+
+        $('.tinyhand1').on("click", () => {
+
+            if ($('#tab1').css("display") == "none") {
+                $('#tab1').show()
+                $('#tap2').hide();
+
+            } else {
+                $('#tab1').hide();
+            }
+        })
+
+        $('.tinyhand2').on("click", () => {
+            if ($('#tap2').css("display") == "none") {
+                $('#tap2').show();
+                $('#tab1').hide();
+            } else {
+                $('#tap2').hide();
+            }
+        })
+
+        $(document).on('click', (e) => {
+            if (e.target.className != "tinyhand1" && e.target.className != "tinyhand2") {
+                $('#tab1').hide();
+                $('#tap2').hide();
+            }
+        })
+
     })
 </script>
+<script src="/node_modules/fancybox/dist/js/jquery.fancybox.js"></script>
 {{/block}}

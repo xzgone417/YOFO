@@ -7,8 +7,14 @@ const casesScheme = mongoose.Schema({
     name:{
         type: String,
     },
-    class:{
-        type:[{name:String,link:String,img:[String]}],
+    href:{
+        type:String
+    },
+    type:{
+        type:[String]
+    },
+    img:{
+        type:[String]
     }
 })
 
