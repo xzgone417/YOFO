@@ -19,8 +19,7 @@
       height: 480px;
       position: relative;
     }
-
-    .phone h3 {
+      .phone h3 {
         font-size: 48px;
         font-weight: 700;
         color: #fff;
@@ -49,10 +48,10 @@
         height: 58px;
       }
       .phone #tabs a {
-        color:#222;
-        font-size: 17px;
+        color: #666;;
+        font-size: 16px;
         display: inline-block;
-        width: 112px;
+        width: 100px;
         height: 58px;
         line-height: 58px;
         text-decoration: none;
@@ -60,6 +59,8 @@
       }
       .phone #tabs .blueborder{
         border-bottom: 2px solid blue;
+        color: #222;
+        font-weight: 700;
       }
     /* 地图 */
     .maps {
@@ -252,7 +253,7 @@
     
   </style>
 
-  <!-- <link rel="stylesheet" href="./c750.css" media="only screen and (max-width: 750px)" /> -->
+  <link rel="stylesheet" href="../../public/css/xzg/contact750.css" media="only screen and (max-width: 750px)" />
   <script src="../../public/js/flexible.js"></script>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -272,7 +273,8 @@
         <h3>企业简介</h3>
         <p>盛德有邻 · 大方无隅</p> 
     <div id="tabs">
-      <a href="/about" class="blueborder">企业简介</a>
+      <div class="phonetabs">
+      <a href="/about">企业简介</a>
       <a href="/milestone">发展历程</a>
       <a href="/honor">资质荣誉</a>
       <a href="/contact" class="blueborder">联系我们</a>
