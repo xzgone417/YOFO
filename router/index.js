@@ -31,7 +31,7 @@ router.get("/milestone", (req, res) => {
     res.render("aboutUs/milestone.html")
 })
 // cases
-router.get("/cases", (req, res) => {
+router.get("//cases?bzlist=kouqiangzhengji", (req, res) => {
     res.render("cases/cases.html")
 })
 // CT
