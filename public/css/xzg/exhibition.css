@@ -1,0 +1,56 @@
+#bluenews{
+    background-image: url("../../img/newsCenter/exhibition/exhibition-main.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 240px;
+    background-position: top;
+    height: 240px;
+    position: relative;
+    margin-top: 60px;
+}
+
+#doingbox {
+    background: #f7f8fa;
+}
+
+#doingbox .row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#doingbox dl {
+    padding-top: 35px;
+}
+
+#doingbox dt {
+    font-size: 28px;
+    height: 70px;
+    /* padding: 35px; */
+    /* padding-top: 35px; */
+    /* border-bottom: 1px solid gray; */
+    border-bottom: 1px solid #d1d1d1;
+}
+
+#doingbox .d-txt {
+    display: block;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    font-size: 20px;
+    line-height: 65px;
+    padding: 15px 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+#doingbox .over-txt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#doingbox .opacity5 {
+    opacity: .5;
+}
+
+
+
+

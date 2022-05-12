@@ -5,6 +5,7 @@
     background-position: top;
     height: 480px;
     position: relative;
+    margin-top: 60px;
   }
     .phone h3 {
       font-size: 48px;
