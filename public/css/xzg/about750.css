@@ -55,10 +55,10 @@
   color: #222;
   font-weight: 700;
 }
-
 /* 正文部分 */
 .subject {
-  padding-top: 96px;
+  margin-top: 96px;
+  padding-top: 0;
   padding-bottom: 36px;
   margin-bottom: 40px;
   position: relative;
@@ -78,7 +78,7 @@
 
 .subject h1 {
   color: rgb(5, 8, 39);
-  padding-bottom: 96px;
+  padding-bottom: 36px;
   font-size: 36px;
   font-weight: 700;
   margin-left: 30px;
