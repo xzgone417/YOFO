@@ -12,6 +12,8 @@ rel="stylesheet"
 href="../public/css/xzg/index750.css"
 media="only screen and (max-width: 750px)";
 />
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.css" />
+<script src="https://www.delac.io/WOW/dist/wow.min.js"></script>
 <script src="../public/js/flexible.js"></script>
 {{/block}}
 
@@ -20,12 +22,12 @@ media="only screen and (max-width: 750px)";
    <section class="Pagehead">
     <div class="pageheadbody">
       <div class="Pagehead750">
-      <h1><img src="../public/img/index/pirox2.svg" alt="" /></h1>     
-      <h2>有方派诺克斯</h2>
-        <p class="">首款双源大视野CBCT</p>
+      <h1 class="wow fadeInDown"><img src="../public/img/index/pirox2.svg" alt="" /></h1>     
+      <h2 class="wow fadeInUp">有方派诺克斯</h2>
+        <p class="wow fadeInUp">首款双源大视野CBCT</p>
       </div>
       <a href="/pirox" style="text-decoration: none">
-        <div class="yuanjiao">
+        <div class="yuanjiao wow fadeInUp">
           了解更多<span class="glyphicon glyphicon-menu-right"></span>
         </div>
       </a>
@@ -68,8 +70,8 @@ media="only screen and (max-width: 750px)";
   <!--     /* hover矩阵 */ -->
   <section class="matrix">
     <div class="matrixbody">
-      <div class="H1Z1 xzgrun"><span>有方专科CT产品矩阵</span></div>
-      <div class="H2Z2 xzgrun"><span>功能多变，普惠质优</span></div>
+      <div class="H1Z1 xzgrun wow fadeInUp"><span>有方专科CT产品矩阵</span></div>
+      <div class="H2Z2 xzgrun wow fadeInUp"><span>功能多变，普惠质优</span></div>
       <div class="CTmain">
         <div class="CTleft">
           <div class="leftCT1 leftCT thebox1 whiteback active1">
@@ -172,7 +174,7 @@ media="only screen and (max-width: 750px)";
       </div>
       <!-- 按钮 -->
       <div class="walkline">
-        <button class="walk xzgrun">
+        <button class="walk xzgrun wow fadeInUp">
           <a href="/about">
             <p>
               走进有方<span class="glyphicon glyphicon-menu-right"></span>
@@ -189,13 +191,13 @@ media="only screen and (max-width: 750px)";
       <div class="H2Z2 xzgrun"><span>探索有方，由此开始</span></div>
       <div class="moremain">
         <div class="moreleft">
-          <div class="moreexhibition xzgrun biggerbox">
+          <div class="moreexhibition xzgrun biggerbox wow fadeInUp">
             <a href="/exhibition">
               <img src="../public/img/index/exhibition.jpg" alt="" />
               <p>展会信息</p>
             </a>
           </div>
-          <div class="moresupport xzgrun biggerbox">
+          <div class="moresupport xzgrun biggerbox wow fadeInUp">
             <a href="/support">
               <img src="../public/img/index/support.jpg" alt="" />
               <p>服务与支持</p>
@@ -203,13 +205,13 @@ media="only screen and (max-width: 750px)";
           </div>
         </div>
         <div class="moremiddle">
-          <div class="moreabout xzgrun biggerbox">
+          <div class="moreabout xzgrun biggerbox wow fadeInUp">
             <a href="/about">
               <img src="../public/img/index/aboutUs.png" alt="" />
               <p>关于有方</p>
             </a>
           </div>
-          <div class="morecases xzgrun biggerbox">
+          <div class="morecases xzgrun biggerbox wow fadeInUp">
             <a href="/cases">
               <img src="../public/img/index/cases.png" alt="" />
               <p>临床案例</p>
@@ -217,13 +219,13 @@ media="only screen and (max-width: 750px)";
           </div>
         </div>
         <div class="moreright">
-          <div class="morejoinus xzgrun biggerbox">
+          <div class="morejoinus xzgrun biggerbox wow fadeInUp">
             <a href="/joinus">
               <img src="../public/img/index/joinus.png" alt="" />
               <p>加入有方</p>
             </a>
           </div>
-          <div class="morenews xzgrun biggerbox">
+          <div class="morenews xzgrun biggerbox wow fadeInUp">
             <a href="/news">
               <img src="../public/img/index/news.png" alt="" />
               <p>咨询中心</p>
@@ -233,7 +235,7 @@ media="only screen and (max-width: 750px)";
       </div>
       <!-- anniu -->
       <div class="contactline">
-        <button class="contact xzgrun">
+        <button class="contact xzgrun wow fadeInUp">
           <a href="/contact">
             <div>
               联系我们<span class="glyphicon glyphicon-menu-right"></span>
@@ -262,16 +264,6 @@ media="only screen and (max-width: 750px)";
 </script>
 <!-- 动画 -->
 <script>
-        document.onclick = function(e){
-            var event = e || window.event;
-            console.log(event.pageX,event.pageY);     
-            if (event.pageY>1200&&event.pageY<1500) {
-            $(".xzgrun").css("animation"," test2 1.5s linear 0.2s 1 alternate") 
-        }
-        if (event.pageY>2000) {
-            $(".xzgrun").css("animation"," test3 1.5s linear 0.2s 1 alternate") 
-        }
-        }
-       
+  new WOW().init();
 </script>
 {{/block}}

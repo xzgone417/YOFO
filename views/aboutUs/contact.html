@@ -11,6 +11,8 @@ rel="stylesheet"
 href="../../public/css/xzg/contact750.css"
 media="only screen and (max-width: 750px)";
 />
+<!-- <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=key8mt9o44EsKCnz3CTbYlAwTt1pVZl9"> -->
+<!-- </script> -->
 <script src="../../public/js/flexible.js"></script>
 {{/block}}
 
@@ -38,7 +40,7 @@ media="only screen and (max-width: 750px)";
         安徽省合肥市经济技术开发区紫石路1452号
       </p>     
       <div class="ditu">
-        <a href=""><span class="glyphicon glyphicon-map-marker text-primary"></span>地图</a>
+        <a href="http://j.map.baidu.com/s/HR7HFb"><span class="glyphicon glyphicon-map-marker text-primary"></span>地图</a>
       </div>
   </div>
   <div class="mapbody"> 
@@ -72,32 +74,33 @@ media="only screen and (max-width: 750px)";
   </div>
   <div class="tablebody">
     <!-- 1 -->
+    <form id="register_form">
     <div class="inputs">
       <div class="form-group form-inline">
-        <label for="exampleInputName2">称呼
+        <label for="exampleInputName2 nickname">称呼
         </label>
-        <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="E.g.John">
+        <input type="text" class="form-control input-lg callinput" id="nickname" name="nickname" placeholder="E.g.John">
       </div>
     </div>
     <!-- 2 -->
     <div class="inputs">
       <div class="form-group  form-inline">
         <label for="exampleInputName2">邮箱</label>
-        <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="E.g.John@doe.com">
+        <input type="email" class="form-control input-lg callinput" id="email" placeholder="E.g.John@doe.com">
       </div>
     </div>
     <!-- 3 -->
     <div class="inputs">
       <div class="form-group  form-inline">
-        <label for="exampleInputName2">联系方式</label>
-        <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="E.g 13000000000">
+        <label for="exampleInputName2 phonenumber">联系方式</label>
+        <input type="text" class="form-control input-lg callinput" id="phonenumber" placeholder="E.g 13000000000">
       </div>
     </div>
     <!--4  -->
     <div class=" inputs">
       <div class="form-group form-inline">
-        <label for="exampleInputName2">工作单位</label>
-        <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="请输入你的工作单位">
+        <label for="exampleInputName2 job">工作单位</label>
+        <input type="text" class="form-control input-lg callinput" id="job" placeholder="请输入你的工作单位">
       </div>
     </div>
     <!--5 checkbox:选择框的样式-->
@@ -110,12 +113,12 @@ media="only screen and (max-width: 750px)";
     <div class="inputs leavenotebox">
       <div class="form-group form-inline">
         <label for="exampleInputName2" class="leavenotelabel">留言信息:</label>
-        <textarea class="form-control callinput leavenote" rows="6" placeholder="请输入你的留言"></textarea>
+        <textarea class="form-control callinput leavenote leaveword" rows="6" placeholder="请输入你的留言"></textarea>
       </div>
     </div>
     <!-- 按钮 -->
-    <div class="endbtn"><button type="button" class="btn btn-lg">提交</button></div>
-      
+    <div class="endbtn"><button type="button" class="btn btn-lg" id="btn">提交</button></div>
+  </form>
        <!-- END -->
     </div>
    
@@ -124,7 +127,34 @@ media="only screen and (max-width: 750px)";
 
 
 {{block "script"}}
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/blueimp-md5/js/md5.js"></script>
+<script src="https://www.layuicdn.com/layui/layui.js"></script>
 <script>
-    console.log("生效了")
+  //点击按钮提交表单
+  $("#btn").click(function () {
+      var formData = $("#register_form").serializeArray();
+      var obj = transformFormData(formData)
+      obj.password = md5(obj.password)
+
+      $.ajax({
+          type: "POST",
+          url: "/contact",
+          data: JSON.stringify(obj),
+          contentType: "application/json",
+          success: function (res) {
+              if (res.code === 2000) {
+                  layer.msg(res.message, { shade: [0.3, '#393D49'], time: 2000 });
+                  setTimeout(() => {
+                      window.location.href = "/message"
+                  }, 2000);
+              }
+              else {
+                  layer.msg(res.message, { shade: [0.3, '#393D49'], time: 2000 });
+              }
+          }
+      })
+      return false;
+  })
 </script>
 {{/block}}

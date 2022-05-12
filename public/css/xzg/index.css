@@ -17,24 +17,24 @@ body {
     padding-top: 196px;
     /*表示动画关键帧的名字为test，延迟一秒钟之后开始执行，持续时间两次，重复执行4次，时序函数为匀速运动，重复执行时方向为alternate。*/
   }
-  @keyframes test1 {
+  /* @keyframes test1 {
     from {
       margin-top: 80px;
     }
     to {
       margin-top: 0px;
     }
-  }
+  } */
   .Pagehead h1 {
     margin-top: 0px;
     margin-bottom: 50px;
-    animation: test1 1.5s linear 0.2s 1 alternate;
+    /* animation: test1 1.5s linear 0.2s 1 alternate; */
   }
   .Pagehead h2 {
     color: #fff;
     font-weight: 700;
     font-size: 42px;
-    animation: test1 1.5s linear 0.2s  1 alternate;
+    /* animation: test1 1.5s linear 0.2s  1 alternate; */
   }
 
   .Pagehead p {
@@ -398,22 +398,4 @@ body {
   .biggerbox:hover{
     box-shadow: 8px 8px 10px rgb(192, 192, 192);
   }
- .xzgrun{
-  animation: test1 1.5s linear 0.2s 1 alternate;
- } 
- @keyframes test2 {
-  from {
-    margin-top: 80px;
-  }
-  to {
-    margin-top: 0px;
-  }
-}
-@keyframes test3 {
-  from {
-    margin-top: 80px;
-  }
-  to {
-    margin-top: 0px;
-  }
-}
+

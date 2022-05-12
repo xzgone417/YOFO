@@ -1,7 +1,8 @@
 // 引用模板和中间件
 const express = require("express");
 // 导入model中的js例如
-const Test = require("../model/test")
+const { find } = require("../model/user");//wode
+const User = require("../model/user")//xzg的
 
 // 挂载中间件
 const path = require("path")
@@ -59,4 +60,22 @@ router.get("/support", (req, res) => {
 router.get("/technology", (req, res) => {
     res.render("technology/technology.html")
 })
+
+//TEST徐正罡写的 
+// router.post("/contact", async (req, res) => {
+//             let user = { user: req.session.user };
+//             await user.save()
+//           res.send("contact")
+//         }
+   
+   
+// )
+// // router.post("/contact", (req, res) => {
+// //     res.render("aboutUs/contact.html")
+// // })
+// router.get("/message", async (req, res) => {
+//     // res.render("aboutUs/message.html" )
+//     let data = await Test.find();
+//     res.render("aboutUs/message.html", { user: data })
+// })
 module.exports = router;
