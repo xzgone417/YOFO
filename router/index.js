@@ -1,8 +1,8 @@
 // 引用模板和中间件
 const express = require("express");
 // 导入model中的js例如
-const { find } = require("../model/user");//wode
-const User = require("../model/user")//xzg的
+// const { find } = require("../model/test");//wode
+// const User = require("../model/test")//xzg的
 
 // 挂载中间件
 const path = require("path")
