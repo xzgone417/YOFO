@@ -10,8 +10,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="../iconfont/iconfont.css"> -->
 
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -50,6 +50,7 @@
             position: absolute;
             width: 100%;
             z-index: 98;
+        padding-left: 60px;
         }
         
         #bs-example-navbar-collapse-1 {
@@ -223,7 +224,7 @@
 </head>
 
 <body>
-    <nav class="navbar yf_navbar">
+    <nav class="navbar yf_navbar container-fluid">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -232,7 +233,7 @@
             <span class="icon-bar"></span>
           </button>
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="../img/index/yofo.logo.png">
+                    <img alt="Brand" src="../../public/img/layout/headLogo.png">
                 </a>
 
             </div>
@@ -274,7 +275,8 @@
                     <li><a href="#">服务与支持</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-                    <li><a href="#" class="iconfont icon-kefu"> 联系我们</a></li>
+                    <!-- iconfont icon-kefu -->
+                    <li><a href="#" class="glyphicon glyphicon-headphones"> 联系我们</a></li>
                 </ul>
             </div>
         </div>
