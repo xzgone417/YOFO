@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <!--设置IE浏览器的渲染模式-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--设定网页视口大小，即网页宽度默认为设备宽度-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>网页标题</title>
+
+  <style>
+    .phone {
+      background-image: url("../../public/img/aboutUs/contact/phone.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 480px;
+      background-position: top;
+      height: 480px;
+      position: relative;
+    }
+      .phone h3 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        top:96px ;
+        left: 1.0667rem;
+      }
+      .phone p {
+        font-size: 18px;
+        color: #fff;
+        opacity: 0.6;
+        position: absolute;
+        top: 180px;
+        left: 1.0667rem;
+      }
+     .phone #tabs {
+        position: absolute;
+        bottom: 0;
+        width: 10rem;
+        height: 58px;
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+      .phone .phonetabs{
+        width: 8rem;
+        margin: 0 auto;
+        height: 58px;
+      }
+      .phone #tabs a {
+        color: #666;;
+        font-size: 16px;
+        display: inline-block;
+        width: 100px;
+        height: 58px;
+        line-height: 58px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .phone #tabs .blueborder{
+        border-bottom: 2px solid blue;
+        color: #222;
+        font-weight: 700;
+      }
+    /* 地图 */
+    .maps {
+      padding-top: 60px;
+      padding-bottom: 15px;
+      background-color: #f7f8fa;
+    }
+
+    .maps .mapmain {
+      padding: 30px 40px 30px 40px;
+      width: 8rem;
+      box-sizing: border-box;
+      height: 606px;
+      background-color: #fff;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .maps h3 {
+      font-size: 28px;
+      margin: 0px;
+      font-weight: 700;
+    }
+
+    .maps p {
+      font-size: 16px;
+      color: rgb(5, 8, 39);
+      opacity: 0.5;
+    }
+
+    .maps .ditu {
+      font-size: 16px;
+      color: #c4c4c4;
+      height: 16px;
+      width: 49px;
+      padding: 10px 28px 10px 28px;
+      border: 1px solid #c4c4c4;
+      border-radius: 100px;
+      box-sizing: content-box;
+      line-height: 16px;
+      margin-top: 10px;
+      position: absolute;
+      top: 28px;
+      right: 40px;
+    }
+
+    .maps .maptitle {
+      height: 66px;
+    }
+    .maps .mapimg {
+      width: 600px;
+      height: 480px;
+      vertical-align:bottom;
+    }
+
+    .maps ul{
+     position:absolute;
+     top: 96px;
+     left: 872px;
+    }
+    .maps .doubleline{
+      display: inline-block;
+      margin-left: 20px;
+    }
+    
+    li {
+      list-style: none;
+      margin-top: 51px;
+    }
+
+    .weicon li {
+      font-size: 30px;
+      color: #2362f6;
+      text-align: left;
+    }
+    .maps h6 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 0;
+      color: #222;
+    }
+    .maps ul span{
+      position: relative;
+      top: -20px;
+    }
+    .maps ul .sapnwechat{
+      position: relative;
+      top: -60px;
+    }
+    .maps .icon2 {
+      margin-top: 61px;
+    }
+
+    .maps small {
+      display: block;
+      font-size: 12px;
+      opacity: 0.5;
+      font-style: normal;
+      color: rgb(5, 8, 39);
+    }
+
+    /* 表单头*/
+    .tables {
+      padding-bottom: 60px;
+      background-color: #f7f8fa;
+    }
+
+    .tables .write {
+      padding: 60px 20px 30px 20px;
+      width: 8rem;
+      box-sizing: border-box;
+      height: 881px;
+      background-color: #fff;
+      text-align: center;
+      margin: 0 auto;;
+    }
+
+    .tables h1 {
+      color: rgb(5, 8, 39);
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 0px;
+    }
+
+    .tables h4 {
+      margin-top: 0px;
+      color: #999;
+      font-size: 18px;
+    }
+
+    .tables .tabletitle {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    /* 表单体*/
+    .tables .tablebody {
+      text-align: left;
+    }
+    .tables .inputs {
+      margin: auto;
+      margin-top: 16px;
+      width: 448px;
+      height: 50px;
+    }
+
+    .tables .form-group {
+      border: 1px solid #999;
+      border-radius: 10px;
+      padding-left: 6px;
+    }
+    .tables .callinput {
+      border: none;
+      background-color: #fff;
+      color: #c4c4c4;
+      box-shadow: none;
+    }
+
+    .tables .checktable {
+      height: 46px;
+      line-height: 46px;
+    }
+    .tables .leavenote{
+      width: 448px;
+      height: 142px; 
+    }
+    .tables .leavenotebox{
+      width: 448px;
+      height: 142px; 
+    }
+    .tables .leavenotelabel{
+      position: relative;
+      top: -55px;
+    
+    }
+.tables .endbtn{
+  margin-top:38px ;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.tables button{
+  width: 228px;
+  height:48px ;
+  border-radius: 20px;
+  background-color: #2362f6;
+  color: #fff;
+
+}
+  .tables .tablebody{
+    font-size: 20px;
+
+  }  
+  </style>
+
+  <link rel="stylesheet" href="../../public/css/xzg/contact750.css" media="only screen and (max-width: 750px)" />
+  <script src="../../public/js/flexible.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- 图片区域 -->
+  <section class="phone">
+        <h3>企业简介</h3>
+        <p>盛德有邻 · 大方无隅</p> 
+    <div id="tabs">
+      <div class="phonetabs">
+      <a href="/about">企业简介</a>
+      <a href="/milestone">发展历程</a>
+      <a href="/honor">资质荣誉</a>
+      <a href="/contact" class="blueborder">联系我们</a>
+      <a href="/joinus">加入有方</a>
+      </div>
+    </div>
+  </section>
+  <!-- 地图 -->
+  <section class="maps">
+    <div class="mapmain">
+      <div class="maptitle">   
+          <h3>中国·合肥</h3>
+          <p id="anhuihefei">
+            安徽省合肥市经济技术开发区紫石路1452号
+          </p>     
+          <div class="ditu">
+            <a href=""><span class="glyphicon glyphicon-map-marker text-primary"></span>地图</a>
+          </div>
+      </div>
+      <div class="mapbody"> 
+          <img src="../../public/img/aboutUs/contact/map.png" alt="" class="mapimg"/>    
+        <ul class="weicon">  
+          <li><span class="glyphicon glyphicon-earphone"></span>
+          <div class="doubleline"> <h6>400-878-2358</h6>
+            <p>周一至周五 9:00~17:00</p></div>
+          </li>
+          <li class="icon2">
+            <span class="glyphicon glyphicon-send"></span>
+            <div class="doubleline"> <h6>400-878-2358</h6>
+              <p>周一至周五 9:00~17:00</p></div>
+          </li>
+          <li class="icon2">
+            <span class="glyphicon glyphicon-comment sapnwechat"></span>
+            <div class="doubleline"> <img src="../../public/img/aboutUs/contact/wechat.png" alt="" style="width: 80px; height: 80px" />
+              <small>有方微信公众号</small></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 表单 -->
+  <section class="tables">
+    <div class="write">
+      <div class="tabletitle">
+        <h1>留言于此</h1>
+        <h4>若无法直接联系，欢迎在此留言，我们将尽快回复！</h4>
+      </div>
+      <div class="tablebody">
+        <!-- 1 -->
+        <div class="inputs">
+          <div class="form-group form-inline">
+            <label for="exampleInputName2">称呼
+            </label>
+            <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="E.g.John">
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="inputs">
+          <div class="form-group  form-inline">
+            <label for="exampleInputName2">邮箱</label>
+            <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="E.g.John@doe.com">
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="inputs">
+          <div class="form-group  form-inline">
+            <label for="exampleInputName2">联系方式</label>
+            <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="E.g 13000000000">
+          </div>
+        </div>
+        <!--4  -->
+        <div class=" inputs">
+          <div class="form-group form-inline">
+            <label for="exampleInputName2">工作单位</label>
+            <input type="text" class="form-control input-lg callinput" id="exampleInputName2" placeholder="请输入你的工作单位">
+          </div>
+        </div>
+        <!--5 checkbox:选择框的样式-->
+        <div class="inputs">
+          <div class="form-group checktable">
+      <input type="checkbox" class="checkwo" /><label id="woxiang">&nbsp;&nbsp;&nbsp;我想预约产品体验 </label>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="inputs leavenotebox">
+          <div class="form-group form-inline">
+            <label for="exampleInputName2" class="leavenotelabel">留言信息</label>
+            <textarea class="form-control callinput leavenote" rows="6" placeholder="请输入你的留言"></textarea>
+          </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="endbtn"><button type="button" class="btn btn-lg">提交</button></div>
+          
+           <!-- END -->
+        </div>
+       
+  </section>
+
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

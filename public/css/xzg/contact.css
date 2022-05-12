@@ -1,82 +1,75 @@
 .phone {
     background-image: url("../../img/aboutUs/contact/phone.jpg");
     background-repeat: no-repeat;
-    background-size: auto 240px;
+    background-size: auto 480px;
     background-position: top;
-    height: 240px;
+    height: 480px;
     position: relative;
   }
-  
-  .phone h3 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    position: absolute;
-    top: 0.6133rem;
-    left: 0.4rem;
-  }
-  
-  .phone p {
-    font-size: 18px;
-    color: #fff;
-    opacity: 0.6;
-    position: absolute;
-    top: 1.4933rem;
-    left: 0.4rem;
-  }
-  
-  .phone #tabs {
-    position: absolute;
-    bottom: -58px;
-    width: 10rem;
-    height: 58px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  
-  .phone .phonetabs {
-    width: 8rem;
-    margin: 0 auto;
-    height: 58px;
-  }
-  
-  .phone #tabs a {
-    color: #666;
-    font-size: 16px;
-    display: inline-block;
-    width: 100px;
-    height: 58px;
-    line-height: 58px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .phone #tabs .blueborder {
-    border-bottom: 2px solid blue;
-    color: #222;
-    font-weight: 700;
-  }
+    .phone h3 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+      position: absolute;
+      top:96px ;
+      left: 1.0667rem;
+    }
+    .phone p {
+      font-size: 18px;
+      color: #fff;
+      opacity: 0.6;
+      position: absolute;
+      top: 180px;
+      left: 1.0667rem;
+    }
+   .phone #tabs {
+      position: absolute;
+      bottom: 0;
+      width: 10rem;
+      height: 58px;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    .phone .phonetabs{
+      width: 8rem;
+      margin: 0 auto;
+      height: 58px;
+    }
+    .phone #tabs a {
+      color: #666;;
+      font-size: 16px;
+      display: inline-block;
+      width: 100px;
+      height: 58px;
+      line-height: 58px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .phone #tabs .blueborder{
+      border-bottom: 2px solid blue;
+      color: #222;
+      font-weight: 700;
+    }
   /* 地图 */
   .maps {
-    margin-top: 80px;
     padding-top: 60px;
     padding-bottom: 15px;
     background-color: #f7f8fa;
   }
 
   .maps .mapmain {
-    padding: 0px 40px 30px 40px;
+    padding: 30px 40px 30px 40px;
     width: 8rem;
     box-sizing: border-box;
-    height: 500px;
+    height: 606px;
     background-color: #fff;
     margin: 0 auto;
     position: relative;
   }
+
   .maps h3 {
     font-size: 28px;
     margin: 0px;
     font-weight: 700;
-    display: none !important;
   }
 
   .maps p {
@@ -84,9 +77,7 @@
     color: rgb(5, 8, 39);
     opacity: 0.5;
   }
-  #anhuihefei{
-    display: none;
-  }
+
   .maps .ditu {
     font-size: 16px;
     color: #c4c4c4;
@@ -101,41 +92,36 @@
     position: absolute;
     top: 28px;
     right: 40px;
-    display: none !important;
   }
 
   .maps .maptitle {
     height: 66px;
-    display: none !important;
   }
   .maps .mapimg {
     width: 600px;
     height: 480px;
     vertical-align:bottom;
-    display: none !important;
   }
 
   .maps ul{
    position:absolute;
-   top: 30px;
-   left: 0px;
+   top: 96px;
+   left: 872px;
   }
-  
   .maps .doubleline{
-    display: block;
+    display: inline-block;
     margin-left: 20px;
   }
   
   li {
     list-style: none;
-    margin-top: 21px;
+    margin-top: 51px;
   }
 
   .weicon li {
     font-size: 30px;
     color: #2362f6;
     text-align: left;
-    margin-bottom: 20px;
   }
   .maps h6 {
     font-size: 20px;
@@ -146,12 +132,10 @@
   .maps ul span{
     position: relative;
     top: -20px;
-    display: block;
-    margin-left: .2667rem;
   }
   .maps ul .sapnwechat{
     position: relative;
-    top: -30px;
+    top: -60px;
   }
   .maps .icon2 {
     margin-top: 61px;
@@ -170,7 +154,7 @@
     padding-bottom: 60px;
     background-color: #f7f8fa;
   }
-  
+
   .tables .write {
     padding: 60px 20px 30px 20px;
     width: 8rem;
@@ -178,7 +162,7 @@
     height: 881px;
     background-color: #fff;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto;;
   }
 
   .tables h1 {
@@ -201,46 +185,32 @@
   }
 
   /* 表单体*/
-
   .tables .tablebody {
     text-align: left;
   }
-  /* .tablebody{
-    font-size:.2667rem;
-  } */
   .tables .inputs {
     margin: auto;
     margin-top: 16px;
-    width: 5.9733rem;
-    height: .6667rem;
-    line-height: .6667rem;
+    width: 448px;
+    height: 50px;
   }
 
-  .tables .form-inline {
+  .tables .form-group {
     border: 1px solid #999;
     border-radius: 10px;
     padding-left: 6px;
-    display: flex;
-    justify-content: space-between;
-  }
-  /* biaoqian */
-  .tables label{
-    width: 1.3333rem;
   }
   .tables .callinput {
-    width: 4.5rem;
     border: none;
     background-color: #fff;
     color: #c4c4c4;
     box-shadow: none;
   }
-.checktable .checkwo{
- text-align: left;
 
-}
-.tablebody #woxiang{
-  width: 3rem;
-}
+  .tables .checktable {
+    height: 46px;
+    line-height: 46px;
+  }
   .tables .leavenote{
     width: 448px;
     height: 142px; 
@@ -251,7 +221,7 @@
   }
   .tables .leavenotelabel{
     position: relative;
-    top: 0;
+    top: -55px;
   
   }
 .tables .endbtn{
@@ -265,4 +235,9 @@ height:48px ;
 border-radius: 20px;
 background-color: #2362f6;
 color: #fff;
+
 }
+.tables .tablebody{
+  font-size: 20px;
+
+}  

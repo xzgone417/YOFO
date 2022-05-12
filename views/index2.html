@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <!--设置IE浏览器的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--设定网页视口大小，即网页宽度默认为设备宽度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>网页标题</title>
+
+    <style>
+      body {
+        padding: 0;
+      }
+      /* 头部大图片 */
+      .Pagehead {
+        background-image: url("../public/img/index/Pirox.jpg");
+        height: 800px;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+
+      .Pagehead .pageheadbody {
+        height: 412px;
+        width: 1440px;
+        margin: 0 auto;
+        padding-top: 196px;
+        /*表示动画关键帧的名字为test，延迟一秒钟之后开始执行，持续时间两次，重复执行4次，时序函数为匀速运动，重复执行时方向为alternate。*/
+      }
+      @keyframes test1 {
+        from {
+          margin-top: 80px;
+        }
+        to {
+          margin-top: 0px;
+        }
+      }
+      .Pagehead h1 {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        animation: test1 1.5s linear 0.2s 1 alternate;
+      }
+      .Pagehead h2 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 42px;
+        animation: test1 1.5s linear 0.2s  1 alternate;
+      }
+
+      .Pagehead p {
+        color: #fff;
+        font-weight: 700;
+        font-size: 42px;
+        margin-bottom: 80px;
+        animation: test1 1.5s linear 0.2s  1 alternate;
+      }
+
+      .Pagehead .yuanjiao {
+        padding: 20px 80px 20px 80px;
+        border: 1px solid #fff;
+        border-radius: 100px;
+        text-align: center;
+
+        width: 86px;
+        height: 18px;
+        line-height: 18px;
+        box-sizing: content-box;
+      }
+      .Pagehead .yuanjiao:hover {
+        border: 1px solid blue;
+      }
+      .Pagehead a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      /* 三联 */
+      .Three {
+        padding-top: 48px;
+        padding-bottom: 80px;
+        background-color: #e7e8eb;
+      }
+
+      .Three .threebody {
+        height: 2.1733rem;
+        width: 9.8667rem;
+        margin: 0 auto;
+        padding-left: .1333rem;
+      }
+
+      .Three ul {
+        padding-top: 19px;
+        padding-left: 0px;
+      }
+
+      .Three li {
+        list-style: none;
+        display: inline-block;
+        width: 2.9733rem;
+        height: 1.92rem;
+        border-radius: 10px;
+        margin-left: 16px;
+        margin-right: 16px;
+        position: relative;
+      }
+
+      .Three .Three1 img {
+        width: 2.9733rem;
+        height: 1.92rem;
+        border-radius: 10px;
+      }
+
+      .Three .Three2 img {
+        width: 2.9733rem;
+        height: 1.92rem;
+        border-radius: 10px;
+      }
+
+      .Three .Three3 img {
+        width: 2.9733rem;
+        height: 1.92rem;
+        border-radius: 10px;
+      }
+
+      .Three .threepages {
+        position: absolute;
+        left: 32px;
+        top: 32px;
+        color: #fff;
+      }
+
+      .Three .subtitle {
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      .Three .txt {
+        opacity: 0.5;
+      }
+
+      /* hover矩阵 */
+      .matrix {
+        background-color: #e7e8eb;
+      }
+
+      .matrix .matrixbody {
+        height: 935px;
+        width: 9.6rem;
+        margin: 0 auto;
+      }
+
+      .matrix .H1Z1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        color: rgb(5, 8, 39);
+      }
+
+      .matrix .H2Z2 {
+        text-align: center;
+        color: #999;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+
+      /* CT */
+      .matrix .CTmain {
+        width: 9.6rem;
+        height: 640px;
+        overflow: hidden;
+      }
+
+      .matrix .CTleft {
+        width: 6.4rem;
+        height: 640px;
+        float: left;
+        position: relative;
+      }
+      .matrix .CTleft img {
+        width: 6.4rem;
+        height: 640px;
+      }
+      /* 有方专科CT */
+      .matrix .HL1 {
+        position: absolute;
+        font-size: 32px;
+        font-weight: 700;
+        left: 32px;
+        top: 32px;
+      }
+      .matrix .HP1 {
+        position: absolute;
+        font-size: 16px;
+        left: 32px;
+        top: 84px;
+        color: #999;
+      }
+
+      .matrix .blacksvg {
+        bottom: 24px;
+        position: absolute;
+        right: 16px;
+      }
+
+      .matrix .CTright {
+        width: 3.2rem;
+        height: 636px;
+        float: left;
+      }
+
+      .matrix ul {
+        padding: 0;
+      }
+
+      .matrix li {
+        list-style: none;
+        width: 1.3333rem;
+        height: 142px;
+        box-sizing: content-box;
+        padding: 16px 12px 0px 24px;
+        background: #262626;
+        border: 1px solid #464646;
+        float: left;
+        margin-bottom: -1px;
+        margin-left: -1px;
+        transition: all 0.4s ease-in;
+        position: relative;
+      }
+
+      .matrix .righttxt {
+        color: #fff;
+        font-size: 16px;
+      }
+
+      /* anniu */
+      .matrix .walkline {
+        margin-top: 40px;
+        text-align: center;
+        width: 9.6rem;
+        height: 48px;
+        line-height: 48px;
+      }
+
+      .matrix .walk {
+        color: #050827;
+        border: 1px solid #292929;
+        border-radius: 100px;
+
+        height: 48px;
+        line-height: 48px;
+        padding-left: 95px;
+        padding-right: 95px;
+        background-color: #fff;
+        margin: 0 auto;
+      }
+
+      /* 更多精彩 */
+      .More {
+        background-color: #fff;
+        padding-top: 96px;
+        padding-bottom: 96px;
+      }
+
+      .More .morebody {
+        height: 902px;
+        width: 9.6rem;
+        margin: 0 auto;
+      }
+
+      .More .H1Z1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        color: rgb(5, 8, 39);
+      }
+
+      .More .H2Z2 {
+        text-align: center;
+        color: #999;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+
+      .More .moremain {
+        width: 9.6rem;
+        height: 4.2667rem;
+        margin-top: 40px;
+        overflow: hidden;
+      }
+
+      .More .moreleft,
+      .moremiddle,
+      .moreright {
+        width: 3.2rem;
+        height: 4.2667rem;
+        float: left;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+      }
+      .More .moremain img {
+        border-radius: 8px;
+      }
+      /* 跳转单元格 */
+      .More .moreexhibition {
+        width: 3.04rem;
+        height: 2.04rem;
+        position: relative;
+        margin-bottom: 28px;
+      }
+      .More .moreexhibition img {
+        width: 3.04rem;
+        height: 2.04rem;
+      }
+      .More .moresupport {
+        width: 3.04rem;
+        height: 2.04rem;
+        position: relative;
+      }
+      .More .moresupport img {
+        width: 3.04rem;
+        height: 2.04rem;
+      }
+      .More .moreabout {
+        width: 3.04rem;
+        height: 3.0133rem;
+        position: relative;
+        margin-bottom: 30px;
+      }
+      .More .moreabout img {
+        width: 3.04rem;
+        height:3.0133rem;
+      }
+      .More .morecases {
+        width: 3.04rem;
+        height: 1.0533rem;
+        position: relative;
+      }
+      .More .morecases img {
+        width: 3.04rem;
+        height: 1.0533rem;
+      }
+      .More .morejoinus {
+        width: 3.04rem;
+        height: 2.04rem;
+        position: relative;
+        margin-bottom: 28px;
+      }
+      .More .morejoinus img {
+        width: 3.04rem;
+        height: 2.04rem;
+      }
+      .More .morenews {
+        width: 3.04rem;
+        height: 2.04rem;
+        position: relative;
+      }
+      .More .morenews img {
+        width: 3.04rem;
+        height: 2.04rem;
+      }
+      .More p {
+        font-size: 24px;
+        font-weight: 700;
+        left: 32px;
+        position: absolute;
+        top: 32px;
+        z-index: 1;
+        color: #fff;
+      }
+      .More .moresupport p,
+      .morecases p {
+        color: #000;
+      }
+      /* anniu */
+      .More .contactline {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 9.6rem;
+        height: 48px;
+        line-height: 48px;
+      }
+
+      .More .contact {
+        color: #050827;
+        border: 1px solid #292929;
+        border-radius: 100px;
+        display: inline-block;
+        height: 48px;
+        line-height: 48px;
+        padding-left: 95px;
+        padding-right: 95px;
+        background-color: #fff;
+        text-align: center;
+      }
+      /* 切换显示 */
+      .whiteback {
+        display: none;
+      }
+      .active {
+        background-color: #095bfb !important;
+      }
+      .active1 {
+        display: block !important;
+      }
+      /* 动画效果 */
+    </style>
+    <link
+      rel="stylesheet"
+      href="../public/css/xzg/index750.css"
+      media="only screen and (max-width: 750px)"
+    />
+    <script src="../public/js/flexible.js"></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- 头部大图片 -->
+    <section class="Pagehead">
+      <div class="pageheadbody">
+        <div class="Pagehead750">
+        <h1><img src="../public/img/index/pirox2.svg" alt="" /></h1>     
+        <h2>有方派诺克斯</h2>
+          <p class="">首款双源大视野CBCT</p>
+        </div>
+        <a href="/pirox" style="text-decoration: none">
+          <div class="yuanjiao">
+            了解更多<span class="glyphicon glyphicon-menu-right"></span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- /* 三联 */ -->
+    <section class="Three">
+      <div class="threebody">
+        <ul>
+          <li class="Three1">
+            <a href="/Dubhewer">
+              <img src="../public/img/index/dubhewer.png" alt="" />
+              <div class="threepages">
+                <p class="subtitle">Dubhewer</p>
+                <p class="txt">专业智能的CBCT图像管理软件</p>
+              </div>
+            </a>
+          </li>
+          <li class="Three2">
+            <a href="/Autudon">
+              <img src="../public/img/index/autudon.png" alt="" />
+              <div class="threepages">
+                <p class="subtitle">Autodon</p>
+                <p class="txt">专业智能的齿科正畸软件</p>
+              </div>
+            </a>
+          </li>
+          <li class="Three3">
+            <a href="/innovation">
+              <img src="../public/img/index/innovation.jpg" alt="" />
+              <div class="threepages">
+                <p class="subtitle">技术与创新</p>
+                <p class="txt">成就新一代的专科CT</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--     /* hover矩阵 */ -->
+    <section class="matrix">
+      <div class="matrixbody">
+        <div class="H1Z1 xzgrun"><span>有方专科CT产品矩阵</span></div>
+        <div class="H2Z2 xzgrun"><span>功能多变，普惠质优</span></div>
+        <div class="CTmain">
+          <div class="CTleft">
+            <div class="leftCT1 leftCT thebox1 whiteback active1">
+              <p class="HL1">口腔颌面CT</p>
+              <p class="HP1">可对头颅骨组织、下颌关 节情况进行更准确评价。</p>
+              <img src="../public/img/index/mouthCT.jpg" alt="" />
+            </div>
+            <div class="leftCT2 leftCT thebox2 whiteback">
+              <p class="HL1">C型臂CT</p>
+              <p class="HP1">用于微创手术中的 图像引导，提高手术的精确度。</p>
+              <img src="../public/img/index/armCT.jpg" alt="" />
+            </div>
+            <div class="leftCTi3 leftCT thebox3 whiteback">
+              <p class="HL1">脑部CT</p>
+              <p class="HP1">对脑部疾病诊断准确，并 有助于确定治疗方案</p>
+              <img src="../public/img/index/brainCT.jpg" alt="" />
+            </div>
+            <div class="leftCT leftCT4 thebox4 whiteback">
+              <p class="HL1">乳腺CT</p>
+              <p class="HP1">极大提高乳腺癌早期筛查 准确度。</p>
+              <img src="../public/img/index/milkCT.jpg" alt="" />
+            </div>
+            <div class="leftCT leftCT5 thebox5 whiteback">
+              <p class="HL1">移动CT</p>
+              <p class="HP1">用于急诊室等科室的辅助 诊断，灵活轻便。</p>
+              <img src="../public/img/index/moveCT.jpg" alt="" />
+            </div>
+            <div class="leftCT leftCT6 thebox6 whiteback">
+              <p class="HL1">放疗辅助CT</p>
+              <p class="HP1">可以反映肿瘤的代谢情 况，使放疗更加精准。</p>
+              <img src="../public/img/index/helpCy.jpg" alt="" />
+            </div>
+            <div class="leftCT leftCT7 thebox7 whiteback">
+              <p class="HL1">车载CT</p>
+              <p class="HP1">让CT诊疗服务更加灵活、 多元化。</p>
+              <img src="../public/img/index/carCT.jpg" alt="" />
+            </div>
+          </div>
+          <div class="CTright">
+            <ul>
+              <li class="bluebox1 active">
+                <p class="righttxt">口腔颌面CT</p>
+                <img
+                  src="../public/img/index/mouthCt.svg"
+                  alt=""
+                  class="blacksvg thebox1 whiteback"
+                />
+              </li>
+              <li class="bluebox2">
+                <p class="righttxt">C型臂CT</p>
+                <img
+                  src="../public/img/index/armCt.svg"
+                  alt=""
+                  class="blacksvg thebox2 whiteback"
+                />
+              </li>
+              <li class="bluebox3">
+                <p class="righttxt">脑部CT</p>
+                <img
+                  src="../public/img/index/brainCt.svg"
+                  alt=""
+                  class="blacksvg thebox3 whiteback"
+                />
+              </li>
+              <li class="bluebox4">
+                <p class="righttxt">乳腺CT</p>
+                <img
+                  src="../public/img/index/milkCt.svg"
+                  alt=""
+                  class="blacksvg thebox4 whiteback"
+                />
+              </li>
+              <li class="bluebox5">
+                <p class="righttxt">移动CT</p>
+                <img
+                  src="../public/img/index/moveCt.svg"
+                  alt=""
+                  class="blacksvg thebox5 whiteback"
+                />
+              </li>
+              <li class="bluebox6">
+                <p class="righttxt">放疗辅助CT</p>
+                <img
+                  src="../public/img/index/helpCt.svg"
+                  alt=""
+                  class="blacksvg thebox6 whiteback"
+                />
+              </li>
+              <li class="bluebox7">
+                <p class="righttxt">车载CT</p>
+                <img
+                  src="../public/img/index/carCt.svg"
+                  alt=""
+                  class="blacksvg thebox7 whiteback"
+                />
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="walkline">
+          <button class="walk xzgrun">
+            <a href="/about">
+              <p>
+                走进有方<span class="glyphicon glyphicon-menu-right"></span>
+              </p>
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--     /* 更多精彩 */ -->
+    <section class="More">
+      <div class="morebody">
+        <div class="H1Z1 xzgrun"><span>更多精彩</span></div>
+        <div class="H2Z2 xzgrun"><span>探索有方，由此开始</span></div>
+        <div class="moremain">
+          <div class="moreleft">
+            <div class="moreexhibition xzgrun">
+              <a href="/exhibition">
+                <img src="../public/img/index/exhibition.jpg" alt="" />
+                <p>展会信息</p>
+              </a>
+            </div>
+            <div class="moresupport xzgrun">
+              <a href="/support">
+                <img src="../public/img/index/support.jpg" alt="" />
+                <p>服务与支持</p>
+              </a>
+            </div>
+          </div>
+          <div class="moremiddle">
+            <div class="moreabout xzgrun">
+              <a href="/about">
+                <img src="../public/img/index/aboutUs.png" alt="" />
+                <p>关于有方</p>
+              </a>
+            </div>
+            <div class="morecases xzgrun">
+              <a href="/cases">
+                <img src="../public/img/index/cases.png" alt="" />
+                <p>临床案例</p>
+              </a>
+            </div>
+          </div>
+          <div class="moreright">
+            <div class="morejoinus xzgrun">
+              <a href="/joinus">
+                <img src="../public/img/index/joinus.png" alt="" />
+                <p>加入有方</p>
+              </a>
+            </div>
+            <div class="morenews xzgrun">
+              <a href="/news">
+                <img src="../public/img/index/news.png" alt="" />
+                <p>咨询中心</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- anniu -->
+        <div class="contactline">
+          <button class="contact xzgrun">
+            <a href="/contact">
+              <div>
+                联系我们<span class="glyphicon glyphicon-menu-right"></span>
+              </div>
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script
+      src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      for (let i = 1; i < 8; i++) {
+        $(".bluebox" + i).mouseover(function () {
+          $(".whiteback").removeClass("active1");
+          $(".thebox" + i).addClass("active1");
+          $(".bluebox" + i)
+            .siblings("li")
+            .removeClass("active");
+          $(".bluebox" + i).addClass("active");
+        });
+      }
+    </script>
+  </body>
+</html>
