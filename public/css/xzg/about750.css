@@ -5,7 +5,9 @@
   background-position: top;
   height: 240px;
   position: relative;
+  margin-top: 100px;
 }
+
 
 .factory h3 {
   font-size: 36px;

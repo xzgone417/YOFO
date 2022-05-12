@@ -20,7 +20,7 @@ router.get("/index", (req, res) => {
     res.render("index.html")
 })
 router.get("/about", (req, res) => {
-    res.render("aboutUs/about.html")
+    res.render("aboutUs/about1.html")
 })
 router.get("/contact", (req, res) => {
     res.render("aboutUs/contact.html")
