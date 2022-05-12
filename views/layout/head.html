@@ -1,304 +1,68 @@
-<!doctype html>
-<html lang="zh-CN">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="../iconfont/iconfont.css"> -->
-
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!--[if lt IE 9]>
-      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-
-    <style>
-        /* 导航条 */
-        
-        .yf_navbar_box {
-            height: 80px;
-            position: relative;
-            border-color: #e7e7e7;
-        }
-        
-        .yf_navbar_box.affix {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-        /* body {
-            margin-top: 40px;
-        } */
-        
-        .yf_navbar {
-            /* background-color: transparent;
-            border-color: #e7e7e7;
-            height: 80px; */
-            height: 80px;
-            border: 0;
-            background-color: #fff;
-            border-radius: 0;
-            position: absolute;
-            width: 100%;
-            z-index: 98;
-            padding-left: 60px;
-        }
-        
-        #bs-example-navbar-collapse-1 {
-            background-color: #fff;
-        }
-        
-        .yf_navbar .navbar-brand {
-            color: #777;
-            height: 80px;
-            line-height: 80px;
-        }
-        
-        .yf_navbar .navbar-brand:hover,
-        .yf_navbar .navbar-brand:focus {
-            color: #5e5e5e;
-            background-color: transparent;
-        }
-        
-        .yf_navbar .navbar-text {
-            color: #777;
-        }
-        
-        .yf_navbar .navbar-nav>li>a {
-            color: #777;
-            height: 80px;
-            line-height: 50px;
-            font-size: 16px;
-            font-weight: 1000;
-            color: #262626;
-            /* padding: 0; */
-            /* padding: 5px; */
-            padding: 15px 5px;
-        }
-        
-        .yf_navbar .navbar-nav>li>a:hover,
-        .yf_navbar .navbar-nav>li>a:focus {
-            color: #333;
-            background-color: transparent;
-            border-bottom: 3px solid blue;
-        }
-        
-        .yf_navbar .navbar-nav>.active>a,
-        .yf_navbar .navbar-nav>.active>a:hover,
-        .yf_navbar .navbar-nav>.active>a:focus {
-            color: #555;
-            /* active当前激活的样式 */
-            /* background-color: #e7e7e7; */
-            border-bottom: 3px solid red;
-        }
-        
-        .yf_navbar .navbar-nav>.disabled>a,
-        .yf_navbar .navbar-nav>.disabled>a:hover,
-        .yf_navbar .navbar-nav>.disabled>a:focus {
-            color: #ccc;
-            background-color: transparent;
-        }
-        
-        .yf_navbar .navbar-toggle {
-            border-color: #ddd;
-            margin-top: 25px;
-        }
-        
-        .yf_navbar .navbar-toggle:hover,
-        .yf_navbar .navbar-toggle:focus {
-            background-color: #ddd;
-        }
-        
-        .yf_navbar .navbar-toggle .icon-bar {
-            background-color: #888;
-        }
-        
-        .yf_navbar .navbar-collapse,
-        .yf_navbar .navbar-form {
-            border-color: #e7e7e7;
-        }
-        
-        .yf_navbar .navbar-nav>.open>a,
-        .yf_navbar .navbar-nav>.open>a:hover,
-        .yf_navbar .navbar-nav>.open>a:focus {
-            color: #555;
-            background-color: #e7e7e7;
-        }
-        
-        @media (max-width: 767px) {
-            .yf_navbar .navbar-nav .open .dropdown-menu>li>a {
-                color: #777;
-            }
-            .yf_navbar .navbar-nav .open .dropdown-menu>li>a:hover,
-            .yf_navbar .navbar-nav .open .dropdown-menu>li>a:focus {
-                color: #333;
-                background-color: transparent;
-            }
-            .yf_navbar .navbar-nav .open .dropdown-menu>.active>a,
-            .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:hover,
-            .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:focus {
-                color: #555;
-                background-color: #e7e7e7;
-            }
-            .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a,
-            .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:hover,
-            .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus {
-                color: #ccc;
-                background-color: transparent;
-            }
-        }
-        
-        .yf_navbar .navbar-link {
-            color: #777;
-        }
-        
-        .yf_navbar .navbar-link:hover {
-            color: #333;
-        }
-        
-        .yf_navbar .btn-link {
-            color: #777;
-        }
-        
-        .yf_navbar .btn-link:hover,
-        .yf_navbar .btn-link:focus {
-            color: #333;
-        }
-        
-        .yf_navbar .btn-link[disabled]:hover,
-        fieldset[disabled] .yf_navbar .btn-link:hover,
-        .yf_navbar .btn-link[disabled]:focus,
-        fieldset[disabled] .yf_navbar .btn-link:focus {
-            color: #ccc;
-        }
-        /* 字体图标 */
-        
-        .iconfont {
-            font-size: 16px!important;
-            font-weight: 700;
-            color: #262626!important;
-        }
-        
-        .navbar-brand {
-            position: relative;
-        }
-        
-        .navbar-brand>img {
-            width: 106px;
-            height: 28px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -50%;
-            margin-top: -50%;
-        }
-        /* 导航条下拉框 */
-        
-        .dropdown .dropdown-menu {
-            display: none;
-            width: 150px;
-        }
-        
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            width: 100px;
-            list-style: none;
-        }
-        
-        .dropdown:hover .dropdown-menu>li>a {
-            display: block;
-            line-height: 48px;
-            padding: 0 10px;
-            text-align: center;
-        }
-        #naver{
-            position: fixed;
-            top: 0;
-            background-color: #fff;
-        }
-        #navercenter{
-            position: fixed;
-            top: 0;
-            left: 1.00667rem;
-            background-color: #fff;
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar yf_navbar container-fluid" id="naver">
-        <div class="container" id="navercenter">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="../../public/img/layout/headLogo.png">
-                </a>
-
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align: center;">
-                <ul class="nav navbar-nav hidden-xs " style="display: inline-block;float: none;padding: 0;">
-                    <li><a href="#">口腔额面CT</a></li>
-                    <li><a href="#">技术与创新</a></li>
-                    <li><a href="#">临床案例</a></li>
-                    <li class="dropdown "><a href="#">关于有方</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="/about">企业简介</a>
-                            </li>
-                            <li>
-                                <a href="/milestone">发展历程</a>
-                            </li>
-                            <li>
-                                <a href="/honor">资质与荣誉</a>
-                            </li>
-                            <li>
-                                <a href="/contact">联系我们</a>
-                            </li>
-                            <li>
-                                <a href="/joinus">加入有方</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown "><a href="#">咨询中心</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="/news">新闻动态</a>
-                            </li>
-                            <li>
-                                <a href="/exhibition">展会信息</a>
-                            </li>
-                        </ul>
-                    </li>
-                    </li>
-                    <li><a href="#">服务与支持</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-                    <!-- iconfont icon-kefu -->
-                    <li><a href="#" class="glyphicon glyphicon-headphones"> 联系我们</a></li>
-                </ul>
-            </div>
+<nav class="navbar yf_navbar container-fluid" id="naver">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img alt="Brand" src="../../public/img/layout/headLogo.png">
+            </a>
         </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align: center;">
+            <ul class="nav navbar-nav hidden-xs " style="display: inline-block;float: none;padding: 0;">
+                <li class="dropdown "><a href="#">口腔额面CT</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/about"><img src="../../public/img/layout/pirox.png" alt="" style="width: 56px;height: 56px;">Pirox</a>
+                        </li>
+                        <li>
+                            <a href="/milestone"><img src="../../public/img/layout/dubhewer.svg" alt="">Dubhewer</a>
+                        </li>
+                        <li>
+                            <a href="/honor"><img src="../../public/img/layout/autodon.svg" alt="">Autodon</a>
+                        </li>
 
-
-
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-</body>
-
-</html>
+                    </ul>
+                </li>
+                <li><a href="/technology">技术与创新</a></li>
+                <li><a href="/cases?bzlist=kouqiangzhengji">临床案例</a></li>
+                <li class="dropdown "><a href="/about">关于有方</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/about">企业简介</a>
+                        </li>
+                        <li>
+                            <a href="/milestone">发展历程</a>
+                        </li>
+                        <li>
+                            <a href="/honor">资质与荣誉</a>
+                        </li>
+                        <li>
+                            <a href="/contact">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="/joinus">加入有方</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown "><a href="/news">咨询中心</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/news">新闻动态</a>
+                        </li>
+                        <li>
+                            <a href="/exhibition">展会信息</a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="/support">服务与支持</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                <li><a href="/contact#ask" class="glyphicon glyphicon-headphones"> 联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -27,10 +27,9 @@
         /* * {
             box-sizing: border-box;
         } */
-        
-        body {
+        /* body {
             padding-top: 60px;
-        }
+        } */
         
         body {
             height: 80px;
@@ -55,23 +54,14 @@
             background-repeat: no-repeat;
             height: 480px;
             position: relative;
-            /* background-image: url(../img/index/milestone_img1.jpg); */
             display: block;
-            /* padding-top: 100px; */
-        }
-        
-        .ft-white {
-            color: rgb(255, 255, 255);
-            z-index: 99;
-        }
-        
-        .pl20 {
-            padding-left: 20px;
-            padding-top: 90px;
         }
         
         .top-img-text {
+            padding-left: 20px;
             padding-top: 150px;
+            color: rgb(255, 255, 255);
+            z-index: 99;
         }
         
         .B-box {
@@ -82,25 +72,19 @@
         }
         /* 发展历程 */
         
-        .pt20 {
+        .top-img-text-one {
             padding-top: 20px;
-        }
-        
-        .ft48 {
             font-size: 48px;
         }
         
-        .ft-w {
+        .severe {
             font-weight: 700;
         }
         /* 盛德有邻 · 大方无隅 */
         
-        .pt10 {
-            padding-top: 10px;
-        }
-        
-        .opacity6 {
+        .top-img-text-two {
             opacity: 0.6;
+            padding-top: 10px;
         }
         
         .ft18 {
@@ -108,20 +92,17 @@
         }
         /* 团队印记 */
         
-        .pt96 {
-            padding-top: 96px
+        .interval {
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
         
         .bgc-color {
             background: #f7f8fa;
         }
-        
-        .pb96 {
-            padding-bottom: 96px;
-        }
         /* 团队印记字体 */
         
-        .text-center {
+        .title {
             text-align: center;
         }
         
@@ -164,7 +145,7 @@
         }
         /* li的第一部分 */
         
-        .ft-blue2 {
+        .color-blue2 {
             color: #095BFB;
         }
         
@@ -277,62 +258,63 @@
 
 <body>
 
+    <!-- 顶部图片 -->
     <div class="top-img" style=" background-image: url(../../public/img/aboutUs/milestone/milestone_img1.jpg)">
         <div class="B-box">
-            <div class="top-img-text ft-white pl20 pt">
-                <h3 class="ft48 ft-w pt20">发展历程</h3>
-                <p class="ft18 m-ft11 opacity6 pt10">盛德有邻 · 大方无隅</p>
+            <div class="top-img-text">
+                <h3 class="severe top-img-text-one">发展历程</h3>
+                <p class="ft18 m-ft11 top-img-text-two">盛德有邻 · 大方无隅</p>
             </div>
         </div>
     </div>
 
     <!-- 团队印记 -->
-    <div class="bgc-color pt96 pb96">
+    <div class="bgc-color interval">
         <div class="B-box">
-            <h5 class="ft36 m-ft22 text-center ft-w">团队印记</h5>
-            <p class="ft18 m-ft11 text-center ft-gray">团队成员印记一览</p>
+            <h5 class="ft36 m-ft22 title severe">团队印记</h5>
+            <p class="ft18 m-ft11 title ft-gray">团队成员印记一览</p>
             <div class="clearfix m-hide">
                 <ul class="nl-li3 li-mt80 li-left">
                     <li>
-                        <h6 class="ft-w ft-blue2 ft36 line10">50+</h6>
-                        <p class="ft-w ft24 line10 mt10">SCI论文</p>
+                        <h6 class="severe color-blue2 ft36 line10">50+</h6>
+                        <p class="severe ft24 line10 mt10">SCI论文</p>
                         <p class="ft16 mt20">
                             共计发表SCI论文50多篇<br>总引用数3000余次
                         </p>
                     </li>
                     <li>
-                        <h6 class="ft-w ft-blue2 ft36 line10">100+</h6>
-                        <p class="ft-w ft24 line10 mt10">国际会议报告</p>
+                        <h6 class="severe color-blue2 ft36 line10">100+</h6>
+                        <p class="severe ft24 line10 mt10">国际会议报告</p>
                         <p class="ft16 mt20">
                             参与100多次国际会议报告
                             <br>发表会议论文30+
                         </p>
                     </li>
                     <li>
-                        <h6 class="ft-w ft-blue2 ft36 line10">60+</h6>
-                        <p class="ft-w ft24 line10 mt10">专利数</p>
+                        <h6 class="severe color-blue2 ft36 line10">60+</h6>
+                        <p class="severe ft24 line10 mt10">专利数</p>
                         <p class="ft16 mt20">
                             60+项中国专利，7项美国专利，
                             <br>2项国际专利
                         </p>
                     </li>
                     <li>
-                        <h6 class="ft-w ft-blue2 ft36 line10">3</h6>
-                        <p class="ft-w ft24 line10 mt10">NIH项目</p>
+                        <h6 class="severe color-blue2 ft36 line10">3</h6>
+                        <p class="severe ft24 line10 mt10">NIH项目</p>
                         <p class="ft16 mt20">
                             主持美国国家卫生所项目3项
                         </p>
                     </li>
                     <li>
-                        <h6 class="ft-w ft-blue2 ft36 line10">1</h6>
-                        <p class="ft-w ft24 line10 mt10">NSFC项目</p>
+                        <h6 class="severe color-blue2 ft36 line10">1</h6>
+                        <p class="severe ft24 line10 mt10">NSFC项目</p>
                         <p class="ft16 mt20">
                             主持国家自然科学基金项目1项
                         </p>
                     </li>
                     <li>
-                        <h6 class="ft-w ft-blue2 ft36 line10">1</h6>
-                        <p class="ft-w ft24 line10 mt10">数字诊疗项目</p>
+                        <h6 class="severe color-blue2 ft36 line10">1</h6>
+                        <p class="severe ft24 line10 mt10">数字诊疗项目</p>
                         <p class="ft16 mt20">
                             主持国家科技部“数字诊疗”重点研发专项1项
                         </p>
@@ -387,14 +369,14 @@
     </div>
 
     <!-- 发展历程 -->
-    <div class="about23 pt96 pb96">
+    <div class="about23 interval">
         <div class="B-box">
-            <h5 class="ft36 m-ft22 text-center ft-w">发展历程</h5>
-            <p class="ft18 m-ft11 text-center ft-gray">重要节点事件一览</p>
+            <h5 class="ft36 m-ft22 title severe">发展历程</h5>
+            <p class="ft18 m-ft11 title ft-gray">重要节点事件一览</p>
         </div>
         <ul class="year-txt mt60 clearfix">
             <li class="content">
-                <h6 class="ft40 ft-w">2021</h6>
+                <h6 class="ft40 severe">2021</h6>
                 <div style="display:none;" class="year-txt__inner ft16 ft-gray">
                     <dl>
                         <dt class="line10">
@@ -404,7 +386,7 @@
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">06月</strong><span>专利数</span><span class="ft-blue2 ml5">60</span>
+                            <strong class="ft18 ft-black mr20">06月</strong><span>专利数</span><span class="color-blue2 ml5">60</span>
                         </dt>
                         <dd>PIROX获NMPA医疗器械三类注册证 。</dd>
                         <dd>全球首款双源高清大视野牙科CBCT PIROX-Z15正式发售。</dd>
@@ -412,41 +394,41 @@
                 </div>
             </li>
             <li class="content">
-                <h6 class="ft40 ft-w">2020</h6>
+                <h6 class="ft40 severe">2020</h6>
                 <div style="display:none;" class="year-txt__inner ft16 ft-gray">
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">03月</strong><span>专利数</span><span class="ft-blue2 ml5">30</span>
+                            <strong class="ft18 ft-black mr20">03月</strong><span>专利数</span><span class="color-blue2 ml5">30</span>
                         </dt>
                         <dd>PIROX通过国家医疗器械性能与安全型式检验。</dd>
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">08月</strong><span>专利数</span><span class="ft-blue2 ml5">32</span>
+                            <strong class="ft18 ft-black mr20">08月</strong><span>专利数</span><span class="color-blue2 ml5">32</span>
                         </dt>
                         <dd>PIROX在多个临床医学中心完成临床试验。</dd>
                         <dd>获安徽华米医疗系统有限公司与安徽国元种子创业投资基金有限公司PreA轮二期投资。</dd>
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">11月</strong><span>专利数</span><span class="ft-blue2 ml5">41</span>
+                            <strong class="ft18 ft-black mr20">11月</strong><span>专利数</span><span class="color-blue2 ml5">41</span>
                         </dt>
                         <dd>获质量体系ISO13485认证。</dd>
                     </dl>
                 </div>
             </li>
             <li class="content">
-                <h6 class="ft40 ft-w">2019</h6>
+                <h6 class="ft40 severe">2019</h6>
                 <div style="display:none;" class="year-txt__inner ft16 ft-gray">
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">03月</strong><span>专利数</span><span class="ft-blue2 ml5">16</span>
+                            <strong class="ft18 ft-black mr20">03月</strong><span>专利数</span><span class="color-blue2 ml5">16</span>
                         </dt>
                         <dd>双源大视野牙科CBCT第一代样机完成。</dd>
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">09月</strong><span>专利数</span><span class="ft-blue2 ml5">20</span>
+                            <strong class="ft18 ft-black mr20">09月</strong><span>专利数</span><span class="color-blue2 ml5">20</span>
                         </dt>
                         <dd>“开放式CT系统”项目获“清华校友三创大赛”长三角赛区一等奖。</dd>
                         <dd>“开放式CT系统“项目获“中国创新创业大赛”全国总决赛优胜奖。</dd>
@@ -454,24 +436,24 @@
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">12月</strong><span>专利数</span><span class="ft-blue2 ml5">25</span>
+                            <strong class="ft18 ft-black mr20">12月</strong><span>专利数</span><span class="color-blue2 ml5">25</span>
                         </dt>
                         <dd>获安徽华颖智慧物联基金合伙企业（有限合伙）PreA轮一期投资。</dd>
                     </dl>
                 </div>
             </li>
             <li class="content">
-                <h6 class="ft40 ft-w">2018</h6>
+                <h6 class="ft40 severe">2018</h6>
                 <div style="display:none;" class="year-txt__inner ft16 ft-gray">
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">04月</strong><span>专利数</span><span class="ft-blue2 ml5">9</span>
+                            <strong class="ft18 ft-black mr20">04月</strong><span>专利数</span><span class="color-blue2 ml5">9</span>
                         </dt>
                         <dd>口腔CBCT作为开放式CT系列首款产品获得立项。</dd>
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">11月</strong><span>专利数</span><span class="ft-blue2 ml5">10</span>
+                            <strong class="ft18 ft-black mr20">11月</strong><span>专利数</span><span class="color-blue2 ml5">10</span>
                         </dt>
                         <dd>”双源并行扫描” 、“高清低冗重建”核心技术研发完成。</dd>
                         <dd>双源大视野牙科CBCT原型机验证完成。</dd>
@@ -479,18 +461,18 @@
                 </div>
             </li>
             <li class="content">
-                <h6 class="ft40 ft-w">2017</h6>
+                <h6 class="ft40 severe">2017</h6>
                 <div style="display:none;" class="year-txt__inner ft16 ft-gray">
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">07月</strong><span>专利数</span><span class="ft-blue2 ml5">1</span>
+                            <strong class="ft18 ft-black mr20">07月</strong><span>专利数</span><span class="color-blue2 ml5">1</span>
                         </dt>
                         <dd>有方（合肥）医疗科技有限公司成立。</dd>
                         <dd>获安徽居巢经济开发区投资有限公司天使轮投资 。</dd>
                     </dl>
                     <dl>
                         <dt class="line10">
-                            <strong class="ft18 ft-black mr20">12月</strong><span>专利数</span><span class="ft-blue2 ml5">3</span>
+                            <strong class="ft18 ft-black mr20">12月</strong><span>专利数</span><span class="color-blue2 ml5">3</span>
                         </dt>
                         <dd>创始人被评为“2017年度合肥十大创新人物” </dd>
                     </dl>

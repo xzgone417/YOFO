@@ -1,14 +1,16 @@
+.m-ft11 {
+    font-size: 11px;
+}
+
+
 /* 最大750团队印记 */
 
 * {
     box-sizing: border-box;
 }
 
-.pb96 {
+.interval {
     padding-bottom: 4.8rem;
-}
-
-.pt96 {
     padding-top: 4.8rem;
 }
 
@@ -51,14 +53,6 @@
 .m-team .m-team-txt:not(:last-of-type) {
     margin-bottom: 32px;
 }
-
-
-/* .m-team .m-team-txt{
-
-} */
-
-
-/* .m-team, .m-team .m-team-one */
 
 .m-team .m-team-txt-one {
     color: rgba(0, 0, 0, .85);
