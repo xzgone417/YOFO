@@ -1,0 +1,170 @@
+/* 最大750团队印记 */
+
+* {
+    box-sizing: border-box;
+}
+
+.pb96 {
+    padding-bottom: 4.8rem;
+}
+
+.pt96 {
+    padding-top: 4.8rem;
+}
+
+.B-box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%!important;
+}
+
+
+/* 
+.text-center {
+    text-align: center;
+} */
+
+
+/* li内容小屏显示 */
+
+.m-hide {
+    display: none;
+}
+
+.m-show {
+    display: block;
+}
+
+.m-team {
+    display: flex;
+    align-items: flex-start;
+}
+
+.m-team .m-team-one:not(:last-of-type) {
+    padding-right: 16px;
+}
+
+.m-team .m-team-one {
+    width: 50%;
+}
+
+.m-team .m-team-txt:not(:last-of-type) {
+    margin-bottom: 32px;
+}
+
+
+/* .m-team .m-team-txt{
+
+} */
+
+
+/* .m-team, .m-team .m-team-one */
+
+.m-team .m-team-txt-one {
+    color: rgba(0, 0, 0, .85);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.m-team .m-team-txt-two {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    max-width: 152px;
+}
+
+
+/* 发展历程750以下显示 */
+
+.about23 {
+    background: #f7f8fa;
+}
+
+.year-txt {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.year-txt li {
+    border-right: none;
+    color: #999;
+    display: inline-block;
+    float: none;
+    width: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+/* 年份 */
+
+.year-txt li.econtent h6.ft40 {
+    border-bottom-color: #2362f6;
+}
+
+.year-txt li h6.ft40 {
+    border-bottom: 2px solid transparent;
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* dl内容 */
+
+.year-txt li .year-txt__inner {
+    display: none;
+}
+
+.year-txt .year-txt__inner {
+    margin-top: 100px;
+    /* visibility: hidden; */
+}
+
+.year-txt .year-txt__inner dl {
+    border-top: 1px solid #eee;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.year-txt .year-txt__inner dl dd {
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.line10 {
+    line-height: 1;
+}
+
+
+/* 月份 */
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.ft-black {
+    color: #000;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+
+/* .ft40 {
+    font-size: 40px!important;
+} */
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
