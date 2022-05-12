@@ -115,10 +115,11 @@
   
   li {
     list-style: none;
-    margin-top: 51px;
   }
 
   .weicon li {
+
+    margin-top: 51px;
     font-size: 30px;
     color: #2362f6;
     text-align: left;
