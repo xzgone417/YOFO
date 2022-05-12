@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>honorhonor</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="../iconfont/iconfont.css"> -->
+    <link rel="stylesheet" href="../../public/css/wss/swiper.min.css">
+    <script src="./js/flexible.js"></script>
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        /* 导航条 */
+        /* * {
+            box-sizing: border-box;
+        } */
+        
+        body {
+            padding-top: 60px;
+        }
+        
+        body {
+            height: 80px;
+            position: relative;
+            border-color: #e7e7e7;
+            font: normal 14px/1.5 PingFang SC, Lantinghei SC, Microsoft YaHei, HanHei SC, Helvetica Neue, Open Sans, Arial, Hiragino Sans GB, 微软雅黑, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+        }
+        /* 顶部图片 */
+        
+        .top-img {
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: 480px;
+            position: relative;
+            /* background-image: url(../img/index/milestone_img1.jpg); */
+            display: block;
+            /* padding-top: 100px; */
+        }
+        
+        .top-img-text {
+            color: rgb(255, 255, 255);
+            z-index: 99;
+            padding-top: 200px!important;
+            padding-left: 40px!important;
+        }
+        
+        .B-box {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+            display: block;
+        }
+        /* 资质与荣誉 */
+        
+        .top-img-text-one {
+            font-size: 48px;
+        }
+        
+        .severe {
+            padding-top: 20px;
+            font-weight: 700;
+        }
+        /* 硕果累累*/
+        
+        .top-img-text-two {
+            opacity: 0.6;
+            padding-top: 10px;
+        }
+        
+        .ft18 {
+            font-size: 18px;
+        }
+        /* 专利数 */
+        
+        .bgc-color {
+            background: #f7f8fa;
+        }
+        
+        .interval {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+        /* L4部分的布局 */
+        
+        .B-box:after {
+            clear: both;
+            content: "";
+            display: table;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+        /* li内容 */
+        
+        .nl-li2>li {
+            width: 50%;
+        }
+        
+        .nl-li2>li,
+        .nl-li3>li,
+        .nl-li4>li {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        
+        .clearfix {
+            height: 500px;
+            background-color: #000
+        }
+        
+        .left {
+            float: left;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .li-left>li {
+            float: left;
+        }
+        
+        .ul-box li>div {
+            background: #fff;
+            box-sizing: border-box;
+            height: 400px;
+            padding: 40px;
+            position: relative;
+        }
+        /* li里文字 */
+        
+        .color-blue {
+            color: rgb(35, 98, 246);
+        }
+        
+        .ft42 {
+            font-size: 42px;
+        }
+        
+        .ft24 {
+            font-size: 24px;
+        }
+        /* 荣誉介绍 */
+        
+        .details {
+            clear: both;
+            height: 80px;
+            left: 40px;
+            overflow-y: auto;
+            position: absolute;
+            right: 40px;
+            top: 70%;
+        }
+        
+        .opacity5 {
+            opacity: 0.5;
+        }
+        
+        .ft-yellow {
+            color: rgb(251, 198, 9);
+        }
+        /* 轮播图 */
+        
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            width: 1500px;
+            height: 100%;
+            padding: 30px 0 60px 0;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.8);
+        }
+        
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1);
+        }
+        /* 轮播上文字 */
+        
+        .title {
+            text-align: center;
+        }
+        
+        .ft36 {
+            font-size: 36px;
+        }
+        
+        .ft-gray {
+            color: rgb(153, 153, 153);
+        }
+        
+        .ptpb {
+            padding-top: 96px;
+            padding-bottom: 45px;
+        }
+        /* 轮播图背景 */
+        
+        .lb_bj {
+            background: url(../../public/img/aboutUs/honor/lb_bj.jpg);
+        }
+        /* 轮播图小点 */
+        /* 媒体查询 */
+        
+        @media screen and (max-width: 750px) {
+            .B-box {
+                width: 100%!important;
+            }
+        }
+        
+        @media screen and (max-width: 992px) {
+            .B-box {
+                width: 100%!important;
+            }
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .B-box {
+                width: 100%!important;
+            }
+        }
+        /* 轮播图自适应 */
+        
+        @media screen and (max-width: 750px) {
+            .swiper-container {
+                width: 100%!important;
+                height: auto;
+            }
+        }
+        
+        @media screen and (max-width: 992px) {
+            .swiper-container {
+                width: 100%!important;
+                height: auto;
+            }
+        }
+        
+        @media screen and (max-width: 1500px) {
+            .swiper-container {
+                width: 100%!important;
+                height: auto;
+            }
+        }
+        /* 轮播图图片自适应 */
+        
+        @media screen and (max-width: 750px) {
+            .swiper-wrapper img {
+                width: 100%!important;
+                height: auto;
+            }
+        }
+        
+        @media screen and (max-width: 992px) {
+            .swiper-wrapper img {
+                width: 100%!important;
+                height: auto;
+            }
+        }
+        
+        @media screen and (max-width: 1500px) {
+            .swiper-wrapper img {
+                width: 100%!important;
+                height: auto;
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="./css/honor_750.css" media="only screen and (max-width: 750px)"> -->
+</head>
+
+<body>
+
+    <div id="post-15" class="top-img" style="background-image: url(../../public/img/aboutUs/honor/honor1.jpg)">
+        <div class="B-box">
+            <div class="top-img-text">
+                <h3 class="top-img-text-one severe">资质与荣誉</h3>
+                <p class="ft18 top-img-text-two">硕果累累</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 专利数，重要荣誉 -->
+
+    <div class="bgc-color interval">
+        <div class="B-box">
+            <ul class="nl-li2 ul-box li-left">
+                <li>
+                    <div class="clearfix">
+                        <dl class="left">
+                            <dt class="ft42 severe color-blue">60+</dt>
+                            <dd class="ft24 severe">专利数</dd>
+                        </dl>
+                        <div class="right">
+                            <img src="../../public/img/aboutUs/honor/honor2.svg" alt="专利数">
+                        </div>
+                        <div class="details ft18 opacity5">
+                            公司拥有医疗CT原创核心技术，中美60多项专利，相关CT控制系统以及成像算法是整个产业链的技术核心，是打破我国现有CT技术升级瓶颈的关键节点。
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="clearfix">
+                        <dl class="left">
+                            <dt class="ft42 severe ft-yellow">30+</dt>
+                            <dd class="ft24 severe">重要荣誉奖项</dd>
+                        </dl>
+                        <div class="right">
+                            <img src="../../public/img/aboutUs/honor/honor3.svg" alt="重要荣誉奖项">
+                        </div>
+                        <div class="details ft18 opacity5">
+                            公司成立以来，屡获殊荣，累计获得大小荣誉100多项，其中包含30多项重要荣誉奖项。
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Swiper -->
+    <div class="lb_bj">
+        <div class="swiper-container">
+            <div class="ptpb">
+                <h5 class="ft36 m-ft22 title severe">部分证书一览</h5>
+                <p class="ft18 m-ft11 title ft-gray">
+                    Qualifications and Honors
+                </p>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb7.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb8.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb9.jpg" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Swiper JS -->
+            <script src="../../public/js/swiper.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+            </script>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+
+</html>

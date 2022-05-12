@@ -1,0 +1,229 @@
+  /* 导航条 */
+  /* * {
+            box-sizing: border-box;
+        } */
+  /* body {
+            padding-top: 60px;
+        } */
+  
+  body {
+      height: 80px;
+      position: relative;
+      border-color: #e7e7e7;
+      font: normal 14px/1.5 PingFang SC, Lantinghei SC, Microsoft YaHei, HanHei SC, Helvetica Neue, Open Sans, Arial, Hiragino Sans GB, 微软雅黑, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-variant-numeric: normal;
+      font-variant-east-asian: normal;
+      font-weight: normal;
+      font-stretch: normal;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+  }
+  /* 顶部图片 */
+  
+  .top-img {
+      background-position: center top;
+      background-repeat: no-repeat;
+      height: 480px;
+      position: relative;
+      display: block;
+  }
+  
+  .top-img-text {
+      padding-left: 20px;
+      padding-top: 150px;
+      color: rgb(255, 255, 255);
+      z-index: 99;
+  }
+  
+  .B-box {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1200px;
+      display: block;
+  }
+  /* 发展历程 */
+  
+  .top-img-text-one {
+      padding-top: 20px;
+      font-size: 48px;
+  }
+  
+  .severe {
+      font-weight: 700;
+  }
+  /* 盛德有邻 · 大方无隅 */
+  
+  .top-img-text-two {
+      opacity: 0.6;
+      padding-top: 10px;
+  }
+  
+  .ft18 {
+      font-size: 18px;
+  }
+  /* 团队印记 */
+  
+  .interval {
+      padding-top: 96px;
+      padding-bottom: 96px;
+  }
+  
+  .bgc-color {
+      background: #f7f8fa;
+  }
+  /* 团队印记字体 */
+  
+  .title {
+      text-align: center;
+  }
+  
+  .ft36 {
+      font-size: 36px;
+  }
+  /* 团队成员印记一览 */
+  
+  .ft-gray {
+      color: #999;
+  }
+  
+  p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+  /* 列表项 li */
+  
+  .li-mt80 li {
+      margin-top: 80px;
+  }
+  
+  .nl-li3>li {
+      width: 33.33%;
+  }
+  
+  .left,
+  .li-left>li {
+      float: left;
+  }
+  
+  .nl-li2>li,
+  .nl-li3>li,
+  .nl-li4>li {
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+  /* li的第一部分 */
+  
+  .color-blue2 {
+      color: #095BFB;
+  }
+  
+  .line10 {
+      line-height: 1;
+  }
+  /* li的第二部分 */
+  
+  .mt10 {
+      margin-top: 10px;
+  }
+  
+  .ft24 {
+      font-size: 24px;
+  }
+  /* li的第三部分 */
+  
+  .mt20 {
+      margin-top: 20px;
+  }
+  
+  .ft16 {
+      font-size: 16px;
+  }
+  /* 发展历程 */
+  
+  .year-txt,
+  .year-txt li {
+      display: flex;
+  }
+  
+  .mt60 {
+      margin-top: 60px;
+  }
+  
+  li,
+  ul {
+      list-style: none;
+  }
+  
+  .year-txt li {
+      border-right: 1px solid #ccc;
+      box-sizing: border-box;
+      flex-direction: column;
+      float: left;
+      justify-content: space-between;
+      padding-left: 2%;
+      padding-right: 2%;
+      width: 20%;
+  }
+  
+  .ft40 {
+      font-size: 40px;
+  }
+  /* 隐藏项 */
+  
+  .year-txt .year-txt__inner {
+      margin-top: 100px;
+      /* visibility: hidden; */
+  }
+  
+  .ft-gray {
+      color: rgb(153, 153, 153);
+  }
+  
+  .ft16 {
+      font-size: 16px;
+  }
+  
+  .year-txt .year-txt__inner dl {
+      border-top: 1px solid #eee;
+      padding-bottom: 30px;
+      padding-top: 15px;
+  }
+  
+  .clearfix::after,
+  .li-left::after,
+  .B-box::after {
+      clear: both;
+      content: "";
+      display: table;
+      height: 0px;
+      line-height: 0;
+      visibility: hidden;
+  }
+  
+  @media screen and (max-width: 992px) {
+      .B-box {
+          width: 100%!important;
+      }
+  }
+  
+  @media screen and (max-width: 1200px) {
+      .B-box {
+          width: 100%!important;
+      }
+  }
+  
+  .content {
+      display: none;
+      height: 500px;
+  }
+  
+  .m-show {
+      display: none;
+  }
