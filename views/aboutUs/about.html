@@ -53,15 +53,21 @@
         }
         
         .factory #tabs a {
-            color: #222;
-            font-size: 17px;
+            color: #666;
+            ;
+            font-size: 16px;
             display: inline-block;
             width: 100px;
             height: 58px;
             line-height: 58px;
             text-decoration: none;
-            margin-right: 0.04rem;
             text-align: center;
+        }
+        
+        .factory #tabs .blueborder {
+            border-bottom: 2px solid blue;
+            color: #222;
+            font-weight: 700;
         }
         /* 正文部分 */
         
@@ -149,10 +155,19 @@
         .subject #lunbotu {
             width: 3.8533rem;
             height: 500px;
-            background-color: aqua;
             position: absolute;
             right: 0;
             top: 0;
+        }
+        
+        .subject .lunboimgbox {
+            width: 3.8533rem;
+            height: 500px;
+        }
+        
+        .subject .lunboimgbox img {
+            width: 578px;
+            height: 500px;
         }
         /* 愿望与使命 */
         
@@ -268,11 +283,7 @@
         }
     </style>
 
-    <!-- <link
-      rel="stylesheet"
-      href="./a750.css"
-      media="only screen and (max-width: 750px)"
-    /> -->
+    <link rel="stylesheet" href="../../public/css/xzg/about750.css" media="only screen and (max-width: 750px)" />
     <script src="../../public/js/flexible.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
@@ -288,17 +299,17 @@
 <body>
     <!-- 图片区域 -->
     <section class="factory">
-        <h3>企业简介</h3>
-        <p>盛德有邻 · 大方无隅</p>
-        <div id="tabs">
-            <div class="factorytabs">
-                <a href="">企业简介</a>
-                <a href="">发展历程</a>
-                <a href="">资质荣誉</a>
-                <a href="">联系我们</a>
-                <a href="">加入有方</a>
+        <<<<<<< HEAD <h3>企业简介</h3>
+            <p>盛德有邻 · 大方无隅</p>
+            <div id="tabs">
+                <div class="factorytabs">
+                    <a href="">企业简介</a>
+                    <a href="">发展历程</a>
+                    <a href="">资质荣誉</a>
+                    <a href="">联系我们</a>
+                    <a href="">加入有方</a>
+                </div>
             </div>
-        </div>
     </section>
     <!-- 正文部分 -->
     <section class="subject">

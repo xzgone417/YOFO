@@ -1,0 +1,207 @@
+{{extend '../layout/layout.html'}}
+
+{{block "head"}}
+<title>多人博客-首页</title>
+<link
+rel="stylesheet"
+href="../../public/css/xzg/about.css";
+media="only screen and (min-width: 750px)";
+/>
+<link
+rel="stylesheet"
+href="../../public/css/xzg/about750.css"
+media="only screen and (max-width: 750px)";
+/>
+<script src="../../public/js/flexible.js"></script>
+{{/block}}
+
+{{block "content"}}
+<section class="factory">
+    <h3>企业简介</h3>
+    <p>盛德有邻 · 大方无隅</p> 
+<div id="tabs">
+  <div class="factorytabs">
+  <a href="/about" class="blueborder">企业简介</a>
+  <a href="/milestone">发展历程</a>
+  <a href="/honor">资质荣誉</a>
+  <a href="/contact" >联系我们</a>
+  <a href="/joinus">加入有方</a>
+  </div>
+</div>
+</section>
+  <!-- 正文部分 -->
+  <section class="subject">
+       <h1>专注CT影像技术的<br />创新高科技企业</h1>
+    <div class="subjectbody">
+      <div class="subjectleft">
+        <div class="subjectsvgs">
+           <div class="subjectsvg">
+          <img src="../../public/img/aboutUs/about/caps.svg" alt="" />
+          <p class="H5Z5">知名专家团队</p>
+        </div>
+        <div class="subjectsvg">
+          <img src="../../public/img/aboutUs/about/newmouthCt.svg" alt="" />
+          <p class="H5Z5">新一代CT方案</p>
+        </div>
+        <div class="subjectsvg">
+          <img src="../../public/img/aboutUs/about/ironArm.svg" alt="" />
+          <p class="H5Z5">自主研发生产</p>
+        </div>
+        </div>    
+        <p class="txt1">
+          有方（合肥）医疗科技有限公司（Yofo Medical Technology Co., Ltd.）
+          成立于2017年7月，由斯坦福大学、硅谷海归团队、医学影像及肿瘤放射治疗领域国际知名专家创立，
+          致力于自主研发功能多变、经济实惠的新一代专科CBCT成像技术，
+          研发产品主要面向不同临床应用的专科CBCT系统整机及相关临床软件，
+          是一家集研、产、销为一体的高端医疗器械制造商。
+        </p>       
+       <p class="txt2">
+          公司以健康中国国家战略发展需求为目标，以临床需求为导向，
+          以国际一流为标杆，通过培养、引进与合作，汇聚国际医学影像高端人才，
+          致力于自主研发、生产、销售覆盖影像诊断和治疗全过程的高端医疗产品，
+          并提供创新医疗影像信息化解决方案。
+        </p>   
+        <p class="txt3">
+          研发产品主要有：牙科CBCT、乳腺专用CBCT、脑部CBCT、
+          肢端CBCT、移动CBCT、车载CBCT、C型臂CBCT、放疗辅助CBCT等。
+        </p>   
+    
+        <div class="yuanbian">
+          <a id="history" href="/milestone"
+            >发展历程 <span class="glyphicon glyphicon-chevron-right"></span
+          ></a>
+            </div>
+      </div>
+      <!-- 轮播图 --> 
+      <div id="lunbotu">
+        <div class="container lunboimgbox">
+          <!-- carousel 轮播图的模块
+               slide是否加上滑动效果 
+               data-ride="carousel"初始化轮播图属性
+        -->
+          <div
+            id="carousel-example-generic"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <!-- 点盒子 -->
+            <ol class="carousel-indicators">
+              <!--
+                data-target="#carousel-example-generic" 控制目标轮播图
+                data-slide-to="0" 控制的是轮播图当中的第几张 （索引）
+                class="active" 当前选中的点
+            -->
+              <li
+                data-target="#carousel-example-generic"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            </ol>
+            <!-- 图片盒子 -->
+            <!-- role="listbox" 提供给屏幕阅读器使用 -->
+            <div class="carousel-inner">
+              <!--需要轮播的容器-->
+              <div class="item active">
+                <img src="../../public/img/aboutUs/about/aboutr1-min.jpg" alt="..." />
+              </div>
+              <div class="item">
+                <img src="../../public/img/aboutUs/about/aboutr2-min.jpg" alt="..." />
+              </div>
+              <div class="item">
+                <img src="../../public/img/aboutUs/about/aboutr3-min.jpg" alt="..." />
+              </div>
+              <div class="item">
+                <img src="../../public/img/aboutUs/about/aboutr4-min.jpg" alt="..." />
+              </div>
+              <div class="item">
+                <img src="../../public/img/aboutUs/about/aboutr5-min.jpg" alt="..." />
+              </div>
+              <div class="item">
+                <img src="../../public/img/aboutUs/about/aboutr6-min.jpg" alt="..." />
+              </div>
+              <div class="item">
+                <img src="../../public/img/aboutUs/about/aboutr7-min.jpg" alt="..." />
+              </div>
+            </div>
+    
+            <!--
+                上一张下一张按钮
+                data-slide="prev"
+                data-slide="next"
+                href="#carousel-example-generic"   控制目标轮播图
+                -->
+            <a
+              class="left carousel-control"
+              href="#carousel-example-generic"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#carousel-example-generic"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+    
+
+
+      </div>
+      <!-- shangfanglunbo -->
+      </div>  
+  </section>
+  <!-- 愿望与使命 -->
+  <section class="duty">
+    <h1>愿景与使命</h1>
+    <h4>Vision and mission</h4>
+    <div class="dutybody">
+      <div class="callhope">
+        <img src="../../public/img/aboutUs/about/hope.png" alt="" />
+      </div>
+      <div class="callduty">
+        <img src="../../public/img/aboutUs/about/duty.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- 有方价值观 -->
+  <section class="values">
+    <h1>有方价值观</h1>
+    <h4>Values</h4>
+    <div class="valuebody"> 
+        <div class="value1">
+          <img src="../../public/img/aboutUs/about/virtue.png" alt="" />
+          <h6>盛德有邻</h6>
+          <p>
+            尊重个人价值和个性发展，重视科学规律与团队协作，
+            不因短期利益降低企业品格，
+            坚信惠及普通大众的长远目标是企业生命力的源泉。
+          </p>
+        </div>
+        <div class="value2">
+          <img src="../../public/img/aboutUs/about/earth.png" alt="" />
+          <h6>大方无隅</h6>
+          <p>
+            脚踏实地，正视差距，明确优势，不自傲，不自卑，
+            不因利益而随波逐流，不因自尊而固执己见。
+          </p>
+        </div>   
+    </div>
+  </section>
+{{/block}}
+
+
+{{block "script"}}
+<script>
+    console.log("生效了")
+</script>
+{{/block}}

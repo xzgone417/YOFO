@@ -1,0 +1,274 @@
+.factory {
+  background-image: url("../../img/aboutUs/about/factory.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 240px;
+  background-position: top;
+  height: 240px;
+  position: relative;
+  margin-top: 100px;
+}
+
+
+.factory h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 0.6133rem;
+  left: 0.4rem;
+}
+
+.factory p {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 1.4933rem;
+  left: 0.4rem;
+}
+
+.factory #tabs {
+  position: absolute;
+  bottom: -58px;
+  width: 10rem;
+  height: 58px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.factory .factorytabs {
+  width: 8rem;
+  margin: 0 auto;
+  height: 58px;
+}
+
+.factory #tabs a {
+  color: #666;
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 58px;
+  line-height: 58px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.factory #tabs .blueborder {
+  border-bottom: 2px solid blue;
+  color: #222;
+  font-weight: 700;
+}
+/* 正文部分 */
+.subject {
+  margin-top: 96px;
+  padding-top: 0;
+  padding-bottom: 36px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.subject .subjectbody {
+  width: 10rem;
+  /* height: 670px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.subject p {
+  font-size: 20px;
+  color: #999;
+}
+
+.subject h1 {
+  color: rgb(5, 8, 39);
+  padding-bottom: 36px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.subject .H5Z5 {
+  color: rgb(5, 8, 39);
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subject .subjectleft {
+  margin-left: 30px;
+}
+
+.subject .subjectsvgs {
+  width: 9.2rem;
+}
+
+.subject .subjectsvg {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.subject .txt1 {
+  margin-top: 50px;
+  width: 9.2rem;
+}
+
+.subject .txt2 {
+  margin-top: 40px;
+  width: 9.2rem;
+}
+
+.subject .txt3 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 9.2rem;
+}
+
+.subject .yuanbian {
+  width: 80px;
+  height: 24px;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid #333;
+  border-radius: 100px;
+  box-sizing: content-box;
+  line-height: 24px;
+  background-color: #fff;
+}
+
+.subject #history {
+  text-decoration: none;
+  color: #333;
+}
+
+.subject #lunbotu {
+  width: 3.8533rem;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none !important;
+}
+
+.subject .lunboimgbox {
+  width: 3.8533rem;
+  height: 500px;
+  display: none !important;
+}
+
+.subject .lunboimgbox img {
+  width: 578px;
+  height: 500px;
+  display: none !important;
+}
+
+/* 愿望与使命 */
+.duty h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.duty h4 {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+
+.duty .dutybody {
+  width: 9.2rem;
+  margin: 0 auto;
+}
+
+.duty .callhope {
+  width: 9.2rem;
+  height: 3.2rem;
+  margin-top: 50px;
+  margin-bottom: 24px;
+}
+
+.duty .callhope img {
+  width: 9.2rem;
+  height: 3.2rem;
+}
+
+.duty .callduty {
+  width: 9.2rem;
+  height: 3.2rem;
+}
+
+.duty .callduty img {
+  width: 9.2rem;
+  height: 3.2rem;
+}
+
+/* 价值观 */
+.values {
+  width: 10rem;
+  height: 8.08rem;
+  padding: 36px 0 96px 0;
+  margin-bottom: 96px;
+}
+
+.values h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.values h4 {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.values .valuebody {
+  width: 9.2rem;
+  height: 6.72rem;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.values .value1 {
+  width: 9.2rem;
+  height: 3.2rem;
+  position: relative;
+
+  margin-bottom: 0.31rem;
+}
+
+.values .value1 img {
+    width: 9.2rem;
+  height: 3.2rem;
+  border-radius: 10px;
+}
+
+.values .value2 {
+    width: 9.2rem;
+  height: 3.2rem;
+  margin-left: 0px;
+    position: relative;
+}
+
+.values .value2 img {
+    width: 9.2rem;
+    height: 3.2rem;
+  border-radius: 10px;
+}
+
+.values h6 {
+  font-size: 0.32rem;
+  font-weight: 700;
+  color: #222;
+  position: absolute;
+  left: 32px;
+  top: 32px;
+}
+
+.values p {
+  color: #a1a1a1;
+  position: absolute;
+  bottom: 0.4rem;
+  font-size: 0.24rem;
+  left: 0.4rem;
+  right: 0.6rem;
+}

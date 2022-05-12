@@ -1,0 +1,300 @@
+body {
+    padding: 0;
+  }
+  /* 头部大图片 */
+  .Pagehead {
+    background-image: url("../../img/index/Pirox.jpg");
+    width: 10rem;
+    height: 12.8rem;
+    background-size: 10rem 12.8rem;
+    background-position:center center; 
+    background-repeat: no-repeat;
+  }
+
+  .Pagehead .pageheadbody {
+    width: 10rem;
+    height: 12.8rem;
+    margin: 0 auto;
+    padding-top: 120px;
+    /*表示动画关键帧的名字为test，延迟一秒钟之后开始执行，持续时间两次，重复执行4次，时序函数为匀速运动，重复执行时方向为alternate。*/
+  }
+  .Pagehead h1 {
+    margin:auto;
+    margin-top: 0px;
+    font-size: .7rem;
+    width: 4.5rem;
+    animation: test1 1.5s linear 0.2s 1 alternate;
+  }
+  .Pagehead h1 img {
+      height: 0.7rem;
+  }
+  .Pagehead h2 {
+    margin: auto;
+    margin-top: 50px;
+    width: 4.1rem;
+    height: .35rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: .35rem;
+  }
+
+  .Pagehead p {
+    margin: auto;
+    width: 4.1rem;
+    height: 62px;
+    line-height: 62px;
+    margin-bottom: 0px;
+    font-size: .18rem;
+    opacity: .5 !important;
+
+
+  }
+
+  .Pagehead .yuanjiao {
+    padding: 12px 39px 12px 39px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 64px;
+    height: 12px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 2.9rem;
+    line-height: 12px;
+    box-sizing: content-box;
+  }
+  .Pagehead .yuanjiao:hover {
+    border: 1px solid blue;
+  }
+  .Pagehead a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  /* 三联 */
+  .Three {
+    padding-top: 0px;
+    /* padding-bottom: 80px; */
+    background-color: #e7e8eb;
+  }
+
+  .Three .threebody {
+    height:36.2rem ;
+    width: 10rem;
+    margin: 0 auto;
+  }
+
+  .Three ul {
+    padding-top: 19px;
+    padding-left: 0px;
+  }
+
+  .Three li {
+    list-style: none;
+    width: 10rem;
+    height: 12.2133rem;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .Three .Three1 img {
+    width: 10rem;
+    height: 12.2133rem;
+    border-radius: 20px;
+  }
+
+  .Three .Three2 img {
+    width: 10rem;
+    height: 12.2133rem;
+    border-radius: 10px;
+  }
+
+  .Three .Three3 img {
+    width: 10rem;
+    height: 12.2133rem;
+    border-radius: 10px;
+  }
+
+  .Three .threepages {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    color: #fff;
+  }
+
+  .Three .subtitle {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .Three .txt {
+    opacity: 0.5;
+  }
+
+  /* hover矩阵 */
+  .matrix {
+    background-color: #e7e8eb;
+    display: none !important;
+  }
+
+  /* 更多精彩 */
+  .More {
+    background-color: #fff;
+    padding-top: 20px;
+    /* padding-bottom: 96px; */
+  }
+
+  .More .morebody {
+    height: 24rem;
+    width: 9.6rem;
+    margin: 0 auto;
+ 
+
+  }
+
+  .More .H1Z1 {
+      margin-top: .1333rem;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(5, 8, 39);
+  }
+
+  .More .H2Z2 {
+    text-align: left;
+    margin-left: 25px;
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .More .moremain {
+    width: 10rem;
+    height: 22.7rem;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  .More .moreleft,
+  .moremiddle,
+  .moreright {
+      padding-left: .1333rem;
+      padding-right: 0;
+      margin-right: 0;
+    width: 9rem;
+    height: auto;
+     float: none;
+  }
+  .More .moremain img {
+    border-radius: 30px;
+  }
+  /* 跳转单元格 */
+  .More .moreexhibition {
+    width: 9.1867rem;
+    height: 4.5867rem;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .More .moreexhibition img {
+    width: 9.1867rem;
+    height: 4.5867rem;
+  }
+  .More .moresupport {
+      width: 9.1867rem;
+    height: 3.4667rem;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .More .moresupport img {
+    width: 9.1867rem;
+    height: 3.4667rem;
+  }
+  .More .moreabout {
+    width: 9.1867rem;
+    height: 3.4667rem;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .More .moreabout img {
+    width: 9.1867rem;
+    height: 3.4667rem;
+  }
+  .More .morecases {
+    width: 9.1867rem;
+    height: 3.4667rem;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .More .morecases img {
+    width: 9.1867rem;
+    height: 3.4667rem;
+  }
+  .More .morejoinus {
+    width: 9.1867rem;
+    height: 3.4667rem;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .More .morejoinus img {
+    width: 9.1867rem;
+    height: 3.4667rem;
+  }
+  .More .morenews {
+    width: 9.1867rem;
+    height: 2.4rem;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .More .morenews img {
+    width: 9.1867rem;
+    height: 2.4rem;
+
+  }
+  .More p {
+    font-size: 24px;
+    font-weight: 700;
+    left: 32px;
+    position: absolute;
+    top: 32px;
+    z-index: 1;
+    color: #fff;
+  }
+  .More .moresupport p,
+  .morecases p {
+    color: #000;
+  }
+  /* anniu */
+  .More .contactline {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 9.6rem;
+    height: 48px;
+    line-height: 48px;
+    margin-left: -90px;
+  }
+
+  .More .contact {
+    color: #050827;
+    border: 1px solid #292929;
+    border-radius: 100px;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+   
+  }
