@@ -2,6 +2,101 @@
     font-size: 11px;
 }
 
+.title {
+    text-align: center;
+}
+
+.ft36 {
+    font-size: 36px;
+}
+
+.severe {
+    font-weight: 700;
+}
+
+
+/* 测试 */
+
+
+/* 顶部图片 */
+
+.top-img {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 480px;
+    position: relative;
+    display: block;
+}
+
+.top-img-text {
+    padding-left: 20px;
+    padding-top: 150px;
+    color: rgb(255, 255, 255);
+    z-index: 99;
+}
+
+
+/* 发展历程 */
+
+.top-img-text-one {
+    padding-top: 20px;
+    font-size: 48px;
+}
+
+.severe {
+    font-weight: 700;
+}
+
+
+/* 盛德有邻 · 大方无隅 */
+
+.top-img-text-two {
+    opacity: 0.6;
+    padding-top: 10px;
+}
+
+.ft18 {
+    font-size: 18px;
+}
+
+
+/* 团队印记 */
+
+.interval {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.bgc-color {
+    background: #f7f8fa;
+}
+
+
+/* 团队印记字体 */
+
+.title {
+    text-align: center;
+}
+
+.ft36 {
+    font-size: 36px;
+}
+
+
+/* 团队成员印记一览 */
+
+.ft-gray {
+    color: #999;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 
 /* 最大750团队印记 */
 
@@ -19,12 +114,6 @@
     padding-right: 2rem;
     width: 100%!important;
 }
-
-
-/* 
-.text-center {
-    text-align: center;
-} */
 
 
 /* li内容小屏显示 */
@@ -161,4 +250,43 @@ dd {
     height: 0;
     line-height: 0;
     visibility: hidden;
+}
+
+
+/* 接口部分 */
+
+.factory {
+    position: relative;
+}
+
+.factory #tabs {
+    position: absolute;
+    bottom: 0;
+    width: 10rem;
+    height: 58px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.factory .factorytabs {
+    width: 8rem;
+    margin: 0 auto;
+    height: 58px;
+}
+
+.factory #tabs a {
+    color: #666;
+    ;
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 58px;
+    line-height: 58px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.factory #tabs .blueborder {
+    border-bottom: 2px solid blue;
+    color: #222;
+    font-weight: 700;
 }

@@ -101,11 +101,6 @@
      padding-right: 12px;
  }
  
- .clearfix {
-     height: 500px;
-     background-color: #000
- }
- 
  .left {
      float: left;
  }
@@ -116,6 +111,7 @@
  
  .li-left>li {
      float: left;
+     list-style: none;
  }
  
  .ul-box li>div {
@@ -217,6 +213,7 @@
  
  .lb_bj {
      background: url(../../public/img/aboutUs/honor/lb_bj.jpg);
+     padding-bottom: 40px;
  }
  /* 轮播图小点 */
  /* 媒体查询 */
@@ -281,4 +278,41 @@
          width: 100%!important;
          height: auto;
      }
+ }
+ /* 接口部分 */
+ 
+ .factory {
+     position: relative;
+ }
+ 
+ .factory #tabs {
+     position: absolute;
+     bottom: 0;
+     width: 10rem;
+     height: 58px;
+     background-color: rgba(255, 255, 255, 0.6);
+ }
+ 
+ .factory .factorytabs {
+     width: 8rem;
+     margin: 0 auto;
+     height: 58px;
+ }
+ 
+ .factory #tabs a {
+     color: #666;
+     ;
+     font-size: 16px;
+     display: inline-block;
+     width: 100px;
+     height: 58px;
+     line-height: 58px;
+     text-decoration: none;
+     text-align: center;
+ }
+ 
+ .factory #tabs .blueborder {
+     border-bottom: 2px solid blue;
+     color: #222;
+     font-weight: 700;
  }

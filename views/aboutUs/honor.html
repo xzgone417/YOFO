@@ -1,72 +1,10 @@
 {{extend '../layout/layout.html'}} {{block "head"}}
 <title>多人博客-首页</title>
 <link rel="stylesheet" href="../../public/css/wss/honor.css" ; />
-<!-- <link rel="stylesheet" href="../../public/css/xzg/about750.css" media="only screen and (max-width: 750px)" ; /> -->
-<!-- <script src="../../public/js/flexible.js"></script> -->
+<link rel="stylesheet" href="../../public/css/wss/swiper.min.css">
+<script src="./js/flexible.js"></script>
+<script src="../../public/js/flexible.js"></script>
 
-<style>
-    @media screen and (max-width: 750px) {
-        .B-box {
-            width: 100%!important;
-        }
-    }
-    
-    @media screen and (max-width: 992px) {
-        .B-box {
-            width: 100%!important;
-        }
-    }
-    
-    @media screen and (max-width: 1200px) {
-        .B-box {
-            width: 100%!important;
-        }
-    }
-    /* 轮播图自适应 */
-    
-    @media screen and (max-width: 750px) {
-        .swiper-container {
-            width: 100%!important;
-            height: auto;
-        }
-    }
-    
-    @media screen and (max-width: 992px) {
-        .swiper-container {
-            width: 100%!important;
-            height: auto;
-        }
-    }
-    
-    @media screen and (max-width: 1500px) {
-        .swiper-container {
-            width: 100%!important;
-            height: auto;
-        }
-    }
-    /* 轮播图图片自适应 */
-    
-    @media screen and (max-width: 750px) {
-        .swiper-wrapper img {
-            width: 100%!important;
-            height: auto;
-        }
-    }
-    
-    @media screen and (max-width: 992px) {
-        .swiper-wrapper img {
-            width: 100%!important;
-            height: auto;
-        }
-    }
-    
-    @media screen and (max-width: 1500px) {
-        .swiper-wrapper img {
-            width: 100%!important;
-            height: auto;
-        }
-    }
-</style>
 {{/block}} {{block "content"}}
 <div id="post-15" class="top-img" style="background-image: url(../../public/img/aboutUs/honor/honor1.jpg)">
     <div class="B-box">
@@ -76,6 +14,19 @@
         </div>
     </div>
 </div>
+
+<!-- 接口 -->
+<section class="factory">
+    <div id="tabs">
+        <div class="factorytabs">
+            <a href="/about">企业简介</a>
+            <a href="/milestone">发展历程</a>
+            <a href="/honor" class="blueborder">资质荣誉</a>
+            <a href="/contact">联系我们</a>
+            <a href="/joinus">加入有方</a>
+        </div>
+    </div>
+</section>
 
 <!-- 专利数，重要荣誉 -->
 
