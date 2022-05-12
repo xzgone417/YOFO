@@ -2,24 +2,342 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" /> {{block "head"}}{{/block}}
-
-    <!--[if lt IE 9]>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
+  {{block "head"}}{{/block}}
+  <title>有方医疗_派CT_口腔诊所引流利器</title>
+  <link rel="shortcut icon" href="/public/img/icon/favicon.ico">
+  <link rel="stylesheet" href="/public/css/common.css">
+  <!--[if lt IE 9]>
       <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /* 导航条 */
+
+    .yf_navbar_box {
+      height: 80px;
+      position: relative;
+      border-color: #e7e7e7;
+    }
+
+    .yf_navbar_box.affix {
+      top: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    #naver {
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+    }
+
+    /* body {
+            margin-top: 40px;
+        } */
+    nav,
+    .navbar .container {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      padding: 0;
+    }
+
+    .navbar-brand img {
+      position: relative;
+      margin-left: 20px !important;
+    }
+
+    /* .navbar .container {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      padding: 0;
+
+    }
+
+    .yf_navbar {
+      visibility: hidden;
+    }
+
+    .navbar-brand img {
+      position: relative;
+      margin-left: 20px !important;
+    } */
+
+    .yf_navbar {
+      /* background-color: transparent;
+            border-color: #e7e7e7;
+            height: 80px; */
+      height: 80px;
+      border: 0;
+      background-color: #fff;
+      border-radius: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 98;
+      padding-left: 60px;
+    }
+
+    #bs-example-navbar-collapse-1 {
+      background-color: #fff;
+    }
+
+    .yf_navbar .navbar-brand {
+      color: #777;
+      height: 80px;
+      line-height: 80px;
+    }
+
+    .yf_navbar .navbar-brand:hover,
+    .yf_navbar .navbar-brand:focus {
+      color: #5e5e5e;
+      background-color: transparent;
+    }
+
+    .yf_navbar .navbar-text {
+      color: #777;
+    }
+
+    .yf_navbar .navbar-nav>li>a {
+      color: #777;
+      height: 80px;
+      line-height: 50px;
+      font-size: 16px;
+      font-weight: 1000;
+      color: #262626;
+      /* padding: 0; */
+      /* padding: 5px; */
+      padding: 15px 5px;
+    }
+
+    .yf_navbar .navbar-nav>li>a:hover,
+    .yf_navbar .navbar-nav>li>a:focus {
+      color: #333;
+      background-color: transparent;
+      border-bottom: 3px solid blue;
+    }
+
+    .yf_navbar .navbar-nav>.active>a,
+    .yf_navbar .navbar-nav>.active>a:hover,
+    .yf_navbar .navbar-nav>.active>a:focus {
+      color: #555;
+      /* active当前激活的样式 */
+      /* background-color: #e7e7e7; */
+      border-bottom: 3px solid red;
+    }
+
+    .yf_navbar .navbar-nav>.disabled>a,
+    .yf_navbar .navbar-nav>.disabled>a:hover,
+    .yf_navbar .navbar-nav>.disabled>a:focus {
+      color: #ccc;
+      background-color: transparent;
+    }
+
+    .yf_navbar .navbar-toggle {
+      border-color: #ddd;
+      margin-top: 25px;
+    }
+
+    .yf_navbar .navbar-toggle:hover,
+    .yf_navbar .navbar-toggle:focus {
+      background-color: #ddd;
+    }
+
+    .yf_navbar .navbar-toggle .icon-bar {
+      background-color: #888;
+    }
+
+    .yf_navbar .navbar-collapse,
+    .yf_navbar .navbar-form {
+      border-color: #e7e7e7;
+    }
+
+    .yf_navbar .navbar-nav>.open>a,
+    .yf_navbar .navbar-nav>.open>a:hover,
+    .yf_navbar .navbar-nav>.open>a:focus {
+      color: #555;
+      background-color: #e7e7e7;
+    }
+
+    @media (max-width: 767px) {
+      .yf_navbar .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+      }
+
+      .yf_navbar .navbar-nav .open .dropdown-menu>li>a:hover,
+      .yf_navbar .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #333;
+        background-color: transparent;
+      }
+
+      .yf_navbar .navbar-nav .open .dropdown-menu>.active>a,
+      .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:hover,
+      .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+      }
+
+      .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a,
+      .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+      .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+        color: #ccc;
+        background-color: transparent;
+      }
+    }
+
+    .yf_navbar .navbar-link {
+      color: #777;
+    }
+
+    .yf_navbar .navbar-link:hover {
+      color: #333;
+    }
+
+    .yf_navbar .btn-link {
+      color: #777;
+    }
+
+    .yf_navbar .btn-link:hover,
+    .yf_navbar .btn-link:focus {
+      color: #333;
+    }
+
+    .yf_navbar .btn-link[disabled]:hover,
+    fieldset[disabled] .yf_navbar .btn-link:hover,
+    .yf_navbar .btn-link[disabled]:focus,
+    fieldset[disabled] .yf_navbar .btn-link:focus {
+      color: #ccc;
+    }
+
+    /* 字体图标 */
+
+    .iconfont {
+      font-size: 16px !important;
+      font-weight: 700;
+      color: #262626 !important;
+    }
+
+    .navbar-brand {
+      position: relative;
+    }
+
+    .navbar-brand>img {
+      width: 106px;
+      height: 28px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    /* 导航条下拉框 */
+
+    .dropdown .dropdown-menu {
+      display: none;
+      width: 150px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      width: 100px;
+      list-style: none;
+    }
+
+    .dropdown:hover .dropdown-menu>li>a {
+      display: block;
+      line-height: 48px;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .container-fluid {
+      background: rgb(38, 38, 38);
+      padding-top: 95px;
+      color: rgb(255, 255, 255);
+    }
+
+    .footnav ul li {
+      list-style: none;
+      float: left;
+      width: 16.5%;
+    }
+
+    .footnav ul li h6 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 20px;
+      /* width: 80px; */
+    }
+
+    .footnav ul li a {
+      color: rgb(255, 255, 255);
+      display: block;
+      line-height: 1.2;
+      opacity: 0.8;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .footnav .footer-qr li>h6 {
+      width: 80px;
+    }
+
+    /* 底部信息栏 */
+
+    .footnav .footer-copyright {
+      margin-top: 120px;
+      border-top: 1px solid rgb(58, 58, 58);
+      padding-bottom: 15px;
+      padding-top: 15px;
+      display: block;
+    }
+
+    .footnav .right {
+      float: right;
+      /* display: none; */
+      list-style: none;
+    }
+
+    .footnav .footLogo img {
+      width: 101px;
+      height: 27px;
+    }
+
+    .footnav a {
+      text-decoration: none;
+
+    }
+
+    .footnav a:hover {
+      color: #095bfb;
+    }
+  </style>
 </head>
 
 <body>
-    {{include "./head.html"}} {{block "content"}}{{/block}} {{include "./foot.html"}}
+  {{include "./head.html"}}
+  {{block "content"}}{{/block}}
+  {{include "./foot.html"}}
 
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
-    {{block "script"}}{{/block}}
+  {{block "script"}}{{/block}}
 </body>
 
 </html>
