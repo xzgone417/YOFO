@@ -18,24 +18,24 @@
       <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
     <style>
-        * {
+        body{
             margin: 0px;
             padding: 0px;
         }
         
-        .container {
+        .container-fluid {
             background: rgb(38, 38, 38);
             padding-top: 95px;
             color: rgb(255, 255, 255);
         }
         
-        ul li {
+        .footnav ul li {
             list-style: none;
             float: left;
             width: 16.5%;
         }
         
-        ul li h6 {
+        .footnav ul li h6 {
             font-size: 16px;
             font-weight: 700;
             line-height: 1;
@@ -43,7 +43,7 @@
             /* width: 80px; */
         }
         
-        ul li a {
+        .footnav ul li a {
             color: rgb(255, 255, 255);
             display: block;
             line-height: 1.2;
@@ -52,12 +52,12 @@
             padding-top: 10px;
         }
         
-        .footer-qr li>h6 {
+        .footnav .footer-qr li>h6 {
             width: 80px;
         }
         /* 底部信息栏 */
         
-        .footer-copyright {
+        .footnav .footer-copyright {
             margin-top: 120px;
             border-top: 1px solid rgb(58, 58, 58);
             padding-bottom: 15px;
@@ -65,21 +65,33 @@
             display: block;
         }
         
-        .right {
+        .footnav .right {
             float: right;
             /* display: none; */
             list-style: none;
+        }
+        .footnav .footLogo img{
+            width: 101px;
+            height:27px ;
+        }
+        .footnav a{
+            text-decoration: none;
+
+        }
+        .footnav a:hover{
+            color: #095bfb;
         }
     </style>
 </head>
 
 <body>
     <!-- 底部导航栏 -->
-    <div class="container">
+    <div class="container-fluid">
+        <div class="container footnav">
         <div class="row">
             <div class="col-md-2">
-                <div class="logo">
-                    <img src="../img/index/logo2.svg" alt="">
+                <div class="footLogo">
+                    <img src="../../public/img/layout/footLogo.svg" alt="">
                 </div>
             </div>
             <div class="col-md-8">
@@ -135,7 +147,7 @@
                 <ul class="footer-qr right m-hide">
                     <li>
                         <h6>微信公众号</h6>
-                        <img width="80" src="../img/index/yofo-qr.png">
+                        <img width="80" src="../../public/img/layout/wecaht.png">
                     </li>
                 </ul>
             </div>
@@ -154,7 +166,8 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
+  </div>
 
 
 
