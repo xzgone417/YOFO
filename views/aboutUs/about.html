@@ -47,17 +47,20 @@
         height: 58px;
       }
       .factory #tabs a {
-        color:#222;
-        font-size: 17px;
+        color: #666;;
+        font-size: 16px;
         display: inline-block;
         width: 100px;
         height: 58px;
         line-height: 58px;
         text-decoration: none;
-        margin-right: 0.04rem;
         text-align: center;
       }
-
+      .factory #tabs .blueborder{
+        border-bottom: 2px solid blue;
+        color: #222;
+        font-weight: 700;
+      }
       /* 正文部分 */
       .subject {
         padding-top: 96px;
@@ -126,6 +129,7 @@
         box-sizing: content-box;
         line-height: 24px;
         background-color: #fff;
+
       }
       .subject #history {
         text-decoration: none;
@@ -133,11 +137,18 @@
       }
       .subject #lunbotu {
         width: 3.8533rem;
-        height: 500px;
-        background-color: aqua;      
+        height: 500px; 
         position: absolute;
         right: 0;
         top: 0;
+      }
+      .subject .lunboimgbox{
+        width: 3.8533rem;
+        height: 500px;
+      }
+      .subject .lunboimgbox img{
+        width: 578px;
+        height: 500px;
       }
       /* 愿望与使命 */
       .duty h1 {
@@ -152,7 +163,7 @@
       }
       .duty .dutybody{
         width: 8rem;
-     margin: 0 auto;
+        margin: 0 auto;
       }
       .duty .callhope {
         width: 8rem;
@@ -236,11 +247,11 @@
       }
     </style>
 
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="./a750.css"
+      href="../../public/css/xzg/about750.css"
       media="only screen and (max-width: 750px)"
-    /> -->
+    />
     <script src="../../public/js/flexible.js"></script>
     <!-- Bootstrap -->
     <link
@@ -260,18 +271,18 @@
   <body>
     <!-- 图片区域 -->
     <section class="factory">
-          <h3>企业简介</h3>
-          <p>盛德有邻 · 大方无隅</p> 
-      <div id="tabs">
-        <div class="factorytabs">
-          <a href="">企业简介</a>
-          <a href="">发展历程</a>
-          <a href="">资质荣誉</a>
-          <a href="">联系我们</a>
-          <a href="">加入有方</a>
-        </div>
-      </div>
-    </section>
+      <h3>企业简介</h3>
+      <p>盛德有邻 · 大方无隅</p> 
+  <div id="tabs">
+    <div class="factorytabs">
+    <a href="/about" class="blueborder">企业简介</a>
+    <a href="/milestone">发展历程</a>
+    <a href="/honor">资质荣誉</a>
+    <a href="/contact" >联系我们</a>
+    <a href="/joinus">加入有方</a>
+    </div>
+  </div>
+</section>
     <!-- 正文部分 -->
     <section class="subject">
          <h1>专注CT影像技术的<br />创新高科技企业</h1>
@@ -309,14 +320,98 @@
             肢端CBCT、移动CBCT、车载CBCT、C型臂CBCT、放疗辅助CBCT等。
           </p>   
       
-          <button class="yuanbian">
-            <div href="" id="history"
+          <div class="yuanbian">
+            <a id="history" href="/milestone"
               >发展历程 <span class="glyphicon glyphicon-chevron-right"></span
-            ></div>
-          </button>
+            ></a>
+              </div>
         </div>
         <!-- 轮播图 --> 
-        <div id="lunbotu"></div>
+        <div id="lunbotu">
+          <div class="container lunboimgbox">
+            <!-- carousel 轮播图的模块
+                 slide是否加上滑动效果 
+                 data-ride="carousel"初始化轮播图属性
+          -->
+            <div
+              id="carousel-example-generic"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <!-- 点盒子 -->
+              <ol class="carousel-indicators">
+                <!--
+                  data-target="#carousel-example-generic" 控制目标轮播图
+                  data-slide-to="0" 控制的是轮播图当中的第几张 （索引）
+                  class="active" 当前选中的点
+              -->
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+              </ol>
+              <!-- 图片盒子 -->
+              <!-- role="listbox" 提供给屏幕阅读器使用 -->
+              <div class="carousel-inner">
+                <!--需要轮播的容器-->
+                <div class="item active">
+                  <img src="../../public/img/aboutUs/about/aboutr1-min.jpg" alt="..." />
+                </div>
+                <div class="item">
+                  <img src="../../public/img/aboutUs/about/aboutr2-min.jpg" alt="..." />
+                </div>
+                <div class="item">
+                  <img src="../../public/img/aboutUs/about/aboutr3-min.jpg" alt="..." />
+                </div>
+                <div class="item">
+                  <img src="../../public/img/aboutUs/about/aboutr4-min.jpg" alt="..." />
+                </div>
+                <div class="item">
+                  <img src="../../public/img/aboutUs/about/aboutr5-min.jpg" alt="..." />
+                </div>
+                <div class="item">
+                  <img src="../../public/img/aboutUs/about/aboutr6-min.jpg" alt="..." />
+                </div>
+                <div class="item">
+                  <img src="../../public/img/aboutUs/about/aboutr7-min.jpg" alt="..." />
+                </div>
+              </div>
+      
+              <!--
+                  上一张下一张按钮
+                  data-slide="prev"
+                  data-slide="next"
+                  href="#carousel-example-generic"   控制目标轮播图
+                  -->
+              <a
+                class="left carousel-control"
+                href="#carousel-example-generic"
+                data-slide="prev"
+              >
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#carousel-example-generic"
+                data-slide="next"
+              >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+      
+
+
+        </div>
+        <!-- shangfanglunbo -->
         </div>  
     </section>
     <!-- 愿望与使命 -->
