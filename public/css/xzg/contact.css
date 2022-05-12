@@ -118,7 +118,6 @@
   }
 
   .weicon li {
-
     margin-top: 51px;
     font-size: 30px;
     color: #2362f6;
@@ -220,11 +219,11 @@
     width: 448px;
     height: 142px; 
   }
-  .tables .leavenotelabel{
+  /* .tables .leavenotelabel{
     position: relative;
     top: -55px;
   
-  }
+  } */
 .tables .endbtn{
 margin-top:38px ;
 margin-bottom: 60px;

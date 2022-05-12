@@ -223,6 +223,11 @@
     display: flex;
     justify-content: space-between;
   }
+  .tables .checktable{
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding-left: 6px;
+  }
   /* biaoqian */
   .tables label{
     width: 1.3333rem;
@@ -242,11 +247,11 @@
   width: 3rem;
 }
   .tables .leavenote{
-    width: 448px;
+    width: 5.9733rem;
     height: 142px; 
   }
   .tables .leavenotebox{
-    width: 448px;
+    width: 5.9733rem;
     height: 142px; 
   }
   .tables .leavenotelabel{
