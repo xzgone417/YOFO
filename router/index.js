@@ -1,6 +1,7 @@
 // 引用模板和中间件
 const express = require("express");
 // 导入model中的js例如
+const Cases = require("../model/cases")
 const Test = require("../model/test")
 
 // 挂载中间件
@@ -13,6 +14,9 @@ const router = express.Router();
 // 渲染页面
 // aboutUs
 router.get("/", (req, res) => {
+    res.redirect("/index")
+})
+router.get("/index", (req, res) => {
     res.render("index.html")
 })
 router.get("/about", (req, res) => {
@@ -31,9 +35,20 @@ router.get("/milestone", (req, res) => {
     res.render("aboutUs/milestone.html")
 })
 // cases
-router.get("/cases", (req, res) => {
-    res.render("cases/cases.html")
-})
+router.get('/cases', async (req, res) => {
+    var name = req.query;
+    let caselist = await Cases.findOne({
+        href: name.bzlist
+    });
+    let type = await Cases.where("type").eq(name.bzlist)
+    console.log(caselist);
+    console.log(type);
+    res.render("cases/cases.html", {
+        caselist,
+        type
+    });
+});
+
 // CT
 router.get("/autodon", (req, res) => {
     res.render("CT/autodon.html")

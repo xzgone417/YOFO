@@ -10,10 +10,8 @@
 //     "multer": "^1.4.4"
 // 下载的那些中间件在这里
 const express = require("express");
-//const router = require("./router")
-const cases = require("./router/cases");
-const support = require("./router/support")
-const autodon = require("./router/autodon")
+const router = require("./router")
+//const cases = require("./router/cases");
 const path = require("path")
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
@@ -52,15 +50,10 @@ app.use(expressSession({
 }));
 
 
-
-// 这里引用router文件夹下的js文件，test只是临时写的
-//app.use(test);
-app.use(cases);
-app.use(support);
-app.use(autodon)
+//app.use(cases);
 
 // 这里引用router文件夹下的js文件，
-//app.use(router)
+app.use(router)
 
 
 // 最低优先级，页面不存在

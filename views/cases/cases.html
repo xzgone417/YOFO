@@ -98,11 +98,14 @@
 
     .bar-right .tab-pane {
         display: inline-block;
-        line-height: 50px;
+        line-height: 30px;
+        margin-bottom: 20px;
     }
 
     .bar-right span {
         float: right;
+        position: relative;
+        bottom: 5px;
     }
 
     .bar-right span a {
@@ -408,7 +411,7 @@
 
         $("#tap2 span a").each(function (index) {
             var href = $("#tap2 span a").eq(index).attr("href");
-            //console.log(href)
+            console.log(href)
             // $(this).addClass("active")
             if (href == location.search) {
                 console.log(this)
