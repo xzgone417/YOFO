@@ -74,7 +74,7 @@ body {
 
   .Three .threebody {
     height: 2.1733rem;
-    width: 9.8667rem;
+    width: 11rem;
     margin: 0 auto;
     padding-left: .1333rem;
   }
@@ -236,7 +236,6 @@ body {
     color: #050827;
     border: 1px solid #292929;
     border-radius: 100px;
-
     height: 48px;
     line-height: 48px;
     padding-left: 95px;
@@ -274,7 +273,7 @@ body {
 
   .More .moremain {
     width: 9.6rem;
-    height: 4.2667rem;
+    height: 4.4rem;
     margin-top: 40px;
     overflow: hidden;
   }
@@ -283,7 +282,7 @@ body {
   .moremiddle,
   .moreright {
     width: 3.2rem;
-    height: 4.2667rem;
+    height: 4.4rem;
     float: left;
     padding-left: 12px;
     padding-right: 12px;
@@ -396,3 +395,25 @@ body {
     display: block !important;
   }
   /* 动画效果 */
+  .biggerbox:hover{
+    box-shadow: 8px 8px 10px rgb(192, 192, 192);
+  }
+ .xzgrun{
+  animation: test1 1.5s linear 0.2s 1 alternate;
+ } 
+ @keyframes test2 {
+  from {
+    margin-top: 80px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+@keyframes test3 {
+  from {
+    margin-top: 80px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}

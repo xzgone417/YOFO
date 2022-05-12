@@ -7,6 +7,29 @@
     position: relative;
     margin-top: 60px;
 }
+#bluenews .DADH2{
+    width: 400px;
+    height: 63px;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    left: 1.3333rem;
+}
+#bluenews .P1{
+    font-size: 42px;
+    font-weight: 700;
+color: #fff;
+opacity: .3;
+text-decoration: none;
+margin-right: 40px;
+}
+#bluenews .P2{
+    font-size: 42px;
+    font-weight: 700;
+color: #fff;
+
+text-decoration: none;
+}
 
 #doingbox {
     background: #f7f8fa;

@@ -35,7 +35,7 @@ media="only screen and (max-width: 750px)";
   <section class="Three">
     <div class="threebody">
       <ul>
-        <li class="Three1">
+        <li class="Three1 biggerbox">
           <a href="/Dubhewer">
             <img src="../public/img/index/dubhewer.png" alt="" />
             <div class="threepages">
@@ -44,7 +44,7 @@ media="only screen and (max-width: 750px)";
             </div>
           </a>
         </li>
-        <li class="Three2">
+        <li class="Three2 biggerbox">
           <a href="/Autudon">
             <img src="../public/img/index/autudon.png" alt="" />
             <div class="threepages">
@@ -53,7 +53,7 @@ media="only screen and (max-width: 750px)";
             </div>
           </a>
         </li>
-        <li class="Three3">
+        <li class="Three3 biggerbox">
           <a href="/innovation">
             <img src="../public/img/index/innovation.jpg" alt="" />
             <div class="threepages">
@@ -189,13 +189,13 @@ media="only screen and (max-width: 750px)";
       <div class="H2Z2 xzgrun"><span>探索有方，由此开始</span></div>
       <div class="moremain">
         <div class="moreleft">
-          <div class="moreexhibition xzgrun">
+          <div class="moreexhibition xzgrun biggerbox">
             <a href="/exhibition">
               <img src="../public/img/index/exhibition.jpg" alt="" />
               <p>展会信息</p>
             </a>
           </div>
-          <div class="moresupport xzgrun">
+          <div class="moresupport xzgrun biggerbox">
             <a href="/support">
               <img src="../public/img/index/support.jpg" alt="" />
               <p>服务与支持</p>
@@ -203,13 +203,13 @@ media="only screen and (max-width: 750px)";
           </div>
         </div>
         <div class="moremiddle">
-          <div class="moreabout xzgrun">
+          <div class="moreabout xzgrun biggerbox">
             <a href="/about">
               <img src="../public/img/index/aboutUs.png" alt="" />
               <p>关于有方</p>
             </a>
           </div>
-          <div class="morecases xzgrun">
+          <div class="morecases xzgrun biggerbox">
             <a href="/cases">
               <img src="../public/img/index/cases.png" alt="" />
               <p>临床案例</p>
@@ -217,13 +217,13 @@ media="only screen and (max-width: 750px)";
           </div>
         </div>
         <div class="moreright">
-          <div class="morejoinus xzgrun">
+          <div class="morejoinus xzgrun biggerbox">
             <a href="/joinus">
               <img src="../public/img/index/joinus.png" alt="" />
               <p>加入有方</p>
             </a>
           </div>
-          <div class="morenews xzgrun">
+          <div class="morenews xzgrun biggerbox">
             <a href="/news">
               <img src="../public/img/index/news.png" alt="" />
               <p>咨询中心</p>
@@ -248,6 +248,7 @@ media="only screen and (max-width: 750px)";
 
 {{block "script"}}
 <script>
+  // 悬浮换图
   for (let i = 1; i < 8; i++) {
     $(".bluebox" + i).mouseover(function () {
       $(".whiteback").removeClass("active1");
@@ -258,5 +259,19 @@ media="only screen and (max-width: 750px)";
       $(".bluebox" + i).addClass("active");
     });
   }
+</script>
+<!-- 动画 -->
+<script>
+        document.onclick = function(e){
+            var event = e || window.event;
+            console.log(event.pageX,event.pageY);     
+            if (event.pageY>1200&&event.pageY<1500) {
+            $(".xzgrun").css("animation"," test2 1.5s linear 0.2s 1 alternate") 
+        }
+        if (event.pageY>2000) {
+            $(".xzgrun").css("animation"," test3 1.5s linear 0.2s 1 alternate") 
+        }
+        }
+       
 </script>
 {{/block}}
