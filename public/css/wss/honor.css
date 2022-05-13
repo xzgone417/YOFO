@@ -148,7 +148,7 @@
      opacity: 0.5;
  }
  
- .ft-yellow {
+ .color-yellow {
      color: rgb(251, 198, 9);
  }
  /* 轮播图 */
@@ -183,7 +183,7 @@
      align-items: center;
      transition: 300ms;
      transform: scale(0.8);
-     /* bottom: 50px; */
+     bottom: 60px;
  }
  
  .swiper-slide-active,
@@ -206,7 +206,7 @@
  
  .ptpb {
      padding-top: 96px;
-     padding-bottom: 45px;
+     padding-bottom: 90px;
  }
  /* 轮播图背景 */
  
