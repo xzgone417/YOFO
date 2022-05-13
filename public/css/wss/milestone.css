@@ -86,7 +86,7 @@
   }
   /* 团队成员印记一览 */
   
-  .ft-gray {
+  .color-gray {
       color: #999;
   }
   
@@ -103,7 +103,7 @@
       margin-top: 80px;
   }
   
-  .nl-li3>li {
+  .ul-box>li {
       width: 33.33%;
   }
   
@@ -112,9 +112,7 @@
       float: left;
   }
   
-  .nl-li2>li,
-  .nl-li3>li,
-  .nl-li4>li {
+  .nl-li2>li {
       padding-left: 12px;
       padding-right: 12px;
   }
@@ -122,10 +120,6 @@
   
   .color-blue2 {
       color: #095BFB;
-  }
-  
-  .line10 {
-      line-height: 1;
   }
   /* li的第二部分 */
   
@@ -182,7 +176,7 @@
       /* visibility: hidden; */
   }
   
-  .ft-gray {
+  .color-gray {
       color: rgb(153, 153, 153);
   }
   

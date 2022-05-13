@@ -85,7 +85,7 @@
 
 /* 团队成员印记一览 */
 
-.ft-gray {
+.color-gray {
     color: #999;
 }
 
@@ -216,10 +216,6 @@ p {
 .year-txt .year-txt__inner dl dd {
     line-height: 1.2;
     margin-top: 10px;
-}
-
-.line10 {
-    line-height: 1;
 }
 
 

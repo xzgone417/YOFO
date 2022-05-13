@@ -90,13 +90,11 @@
  }
  /* li内容 */
  
- .nl-li2>li {
+ .ul-box>li {
      width: 50%;
  }
  
- .nl-li2>li,
- .nl-li3>li,
- .nl-li4>li {
+ .ul-box>li {
      padding-left: 12px;
      padding-right: 12px;
  }
@@ -185,6 +183,7 @@
      align-items: center;
      transition: 300ms;
      transform: scale(0.8);
+     /* bottom: 50px; */
  }
  
  .swiper-slide-active,
@@ -201,7 +200,7 @@
      font-size: 36px;
  }
  
- .ft-gray {
+ .color-gray {
      color: rgb(153, 153, 153);
  }
  
