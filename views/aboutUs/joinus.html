@@ -22,6 +22,42 @@
   <body>
     <div class="container">
       <div class="row">
+        <div class="top-menu-left col-md-2">
+          <a href="#">
+            <img src="/public/img/images/pirox/yofo.logo.png" alt="" />
+          </a>
+        </div>
+        <div class="top-menu-center col-md-7">
+          <ul>
+            <li class="mouth">
+              <a href="#"> 口腔颌面CT</a>
+            </li>
+
+            <li><a> 技术与创新 </a></li>
+            <li><a>临床案例</a></li>
+            <li>
+              <a class="youfo">关于有方</a>
+              <ul>
+                <li>企业简介</li>
+                <li>发展历程</li>
+                <li>资质与荣誉</li>
+                <li>加入有方</li>
+                <li>联系我们</li>
+              </ul>
+            </li>
+            <li><a>资讯中心</a></li>
+            <li><a>服务与支持</a></li>
+          </ul>
+        </div>
+        <div class="top-menu-right col-md-3">
+          <span class="iconfont">&#xe774;</span>
+          <span class="contact">联系我们</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
         <div class="top-banner">
           <p>加入有方</p>
           <p>在这里，成就更好的自己！</p>
@@ -36,7 +72,7 @@
             <li><a href="#">发展历程</a></li>
             <li><a href="#">资质荣誉</a></li>
             <li><a href="#">联系我们</a></li>
-            <li><a href="#">加入有方</a></li>
+            <li><a href="/joinus">加入有方</a></li>
           </ul>
         </div>
       </div>
@@ -68,404 +104,135 @@
           </div>
           <div class="right col-md-9">
             <div class="row">
-              <div
-                class="panel-group"
-                id="accordion"
-                role="tablist"
-                aria-multiselectable="true"
-              >
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
+              <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> -->
+           
+                <div class="pan">
+                  {{each person}}
+                <div class="panel panel-default" id="panel">
+                  <div class="panel-heading" role="tab"    id="{{$value.heading}}" >
                     <h4 class="panel-title">
                       <a
+                        class="collapsed"
                         role="button"
                         data-toggle="collapse"
                         data-parent="#accordion"
-                        href="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                        style="text-decoration: none"
+                        href="{{$value.collapse}}"
+                        aria-expanded="false"
+                        aria-controls="{{$value.control}}"
                       >
-                      <span class="job">区域销售经理</span>
-                    <p class="icon"> 
-                         <span class="iconfont">&#xe727; </span>
-                         <span class="iconfont">&#xe61c; </span>
-                    </p>
-                        
-                   <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
+                        <span class="job">{{$value.title1}}</span>
+                        <p class="icon">
+                          <span class="iconfont">&#xe727; 市场类</span>
+                          <span class="iconfont">&#xe61c; 合肥市</span>
+                        </p>
+
+                        <p class="drop">
+                          <span class="iconfont">&#xe69a;</span>
+                        </p>
                       </a>
                     </h4>
                   </div>
+               
                   <div
-                    id="collapseOne"
-                    class="panel-collapse collapse in"
+                    class="panel-collapse collapse"
                     role="tabpanel"
+                    id="{{$value.control}}"
                     aria-labelledby="headingOne"
                   >
+                
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                    <div class="panel-content">
+             <div class="panel-desc">
+                        <h5>{{$value.title2}}</h5>
+                      <p>{{$value.description1}}</p>
+                      <p>{{$value.description2}}</p>
+                      <p>{{$value.description3}}</p>
+                      <p>{{$value.description4}}</p>
+                    
+                      </div>
+                      <div class="panel-exp">
+                        <h5>{{$value.title3}}</h5>
+                        <p>{{$value.description5}}</p>
+                         <p>{{$value.description6}}</p>
+                        <p>{{$value.description7}}</p>
+                        <p>{{$value.description8}}</p>
+                        <p>{{$value.description9}}</p>
+                      </div>
+                      <div class="panel-contact">
+                        <span>{{$value.title4}}</span>
+                        <span>hr@yofomedical.com</span>
+                        <span><a href="https://www.yofomedical.com/joinus/quyuxiaoshoujingli"><button>在线申请</button></a></span>
+                      </div>
+                    </div>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                      <span class="job">研发项目经理</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 研发类 </span>
-                           <span class="iconfont">&#xe61c; 合肥市</span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
                   </div>
-                  <div
-                    id="collapseTwo"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingTwo"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                      <span class="job">口腔医学经理</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 市场类  </span>
-                           <span class="iconfont">&#xe61c; 合肥市</span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseThree"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingThree"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFour">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour"
-                      >
-                      <span class="job">嵌入式软件工程师（FPGA）</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 研发类</span>
-                           <span class="iconfont">&#xe61c; 合肥市 </span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingFour"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFive">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseFive"
-                        aria-expanded="false"
-                        aria-controls="collapseFive"
-                      >
-                      <span class="job">高级软件工程师</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 研发类 </span>
-                           <span class="iconfont">&#xe61c; 合肥市</span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseFive"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingFive"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingSix">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseSix"
-                        aria-expanded="false"
-                        aria-controls="collapseSix"
-                      >
-                      <span class="job">机械工程师</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 研发类</span>
-                           <span class="iconfont">&#xe61c; 合肥市 </span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseSix"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingSix"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingSeven">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseSeven"
-                        aria-expanded="false"
-                        aria-controls="collapseSeven"
-                      >
-                      <span class="job">算法工程师</span>
-                    <p class="icon"> 
-                         <span class="iconfont">&#xe727; 研发类 </span>
-                         <span class="iconfont">&#xe61c; 合肥市</span>
-                    </p>
-                        
-                   <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseSeven"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingSeven"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingEight">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseEight"
-                        aria-expanded="false"
-                        aria-controls="collapseEight"
-                      >
-                      <span class="job">质检员</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 研发类</span>
-                           <span class="iconfont">&#xe61c; 合肥市 </span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseEight"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingEight"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingNine">
-                    <h4 class="panel-title">
-                      <a
-                        class="collapsed"
-                        role="button"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseNine"
-                        aria-expanded="false"
-                        aria-controls="collapseNine"
-                      >
-                      <span class="job">华南区售后服务工程师</span>
-                      <p class="icon"> 
-                           <span class="iconfont">&#xe727; 市场类 研发类 </span>
-                           <span class="iconfont">&#xe61c; 东菀市 合肥市 </span>
-                      </p>
-                          
-                     <p class="drop"> <span class="iconfont" >&#xe69a;</span></p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseNine"
-                    class="panel-collapse collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingNine"
-                  >
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
+                  {{/each}}
+              </div>
+                <!-- </div> -->
               </div>
             </div>
           </div>
         </aside>
       </div>
     </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="foot">
+            <div class="left col-md-3"><img src="/public/img/images/pirox/logo2 (1).svg" alt=""></div>
+            <div class="center col-md-6">
+              <ul>
+                <li>
+                  <h3>口腔颌面CT</h3>
+                  <p>PIROX</p>
+                  <p>Dubhewer</p>
+                  <p>Autodon</p>
+                </li>
+                <li>
+                  <h3>技术与创新</h3>
+                  <p>技术与创新</p>
+                </li>
+                <li>
+                  <h3>临床案例</h3>
+                  <p>临床案例</p>
+                </li>
+                <li>
+                  <h3>关于有方</h3>
+                  <p>企业简介</p>
+                  <p>发展历程</p>
+                  <p>荣誉与资质</p>
+                  <p>联系我们</p>
+                  <p>加入有方</p>
+                </li>
+                <li>
+                  <h3>资讯中心</h3>
+                  <p>新闻动态</p>
+                 <p>展会信息</p>
+                </li>
+                <li>
+                  <h3>服务与支持</h3>
+                  <p>服务与支持</p>
+                </li>
+              </ul>
+            </div>
+            <div class="right col-md-3">
+              
+              <h3>微信公众号</h3>
+              <img src="/public/img/images/pirox/yofo-qr.png" alt="">
+            </div>
+          <div class="bottom">
+            <hr>
+            <span>&copy;皖ICP备17020699号-1 有方医疗 All Rights Reserved. 版权所有：有方医疗 </span>
+            <span> 语言：简体中文</span>
+          </div>
+          </div>
+        </div>
+       
+      </div>
+      
+          </div>
+       
   </body>
 </html>
