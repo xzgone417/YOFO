@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f7f8fa;
+    color: rgb(5, 8, 39);
+    font: 14px / 1.5 "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+a,a:hover{
+    text-decoration: none !important;
+}
+
+li, ul {
+    list-style: none;
+}
+

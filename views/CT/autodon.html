@@ -1,0 +1,253 @@
+{{extend '../layout/layout.html'}}
+{{block "head"}}
+
+<style>
+    #autodon {
+        margin-top: 85px;
+    }
+
+    .autodon-banner {
+        height: 800px;
+        background-size: cover;
+        color: #fff;
+        background-position: top;
+        background-image: url('/public/img/CT/autodon/support-bg.jpg');
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .autodon-banner h2 {
+        font-size: 80px;
+        font-weight: 700;
+        padding-top: 144px;
+        position: relative;
+        padding: 144px 0 36px 0;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .autodon-banner h2::after {
+        background-color: #6d99f2;
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 64px;
+    }
+
+    .autodon-banner p {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    #autodon .wrap {
+        padding: 96px 20px 0 20px;
+        width: auto !important;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #autodon .wrap h2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #autodon .wrap p {
+        text-align: center;
+        font-size: 18px;
+        color: rgb(153, 153, 153);
+    }
+
+    #autodon .wrap>.tit {
+        padding-bottom: 96px;
+    }
+
+    #autodon .dubox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #autodon .dubox:nth-child(2n) .dubox_l,
+    #autodon .dubox:nth-child(2n+1) .dubox_r {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    #autodon .dubox {
+        padding-bottom: 192px;
+    }
+
+    #autodon .dubox:nth-child(2n+1) .dubox_l,
+    #autodon .dubox:nth-child(2n) .dubox_r {
+
+        padding: 0 20px;
+    }
+
+    #autodon .dubox .icon {
+        margin-bottom: 24px;
+    }
+
+    #autodon .dubox:nth-child(2n+1) .dubox_l .icon img,
+    #autodon .dubox:nth-child(2n) .dubox_r .icon img {
+        width: 100%;
+    }
+
+    #autodon .dubox .dubox_tit {
+        font-size: 28px;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    #autodon .dubox .dubox_content p {
+        text-align: start;
+        color: #666;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    @media screen and (max-width: 750px) {
+        #autodon {
+            min-width: 375px;
+        }
+
+        #autodon .dubox {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+
+        }
+
+        .autodon-banner {
+            height: 828px;
+            background-image: url("/public/img/CT/autodon/support-m.jpg");
+        }
+
+        .autodon-banner p {
+            font-size: 30px;
+            opacity: .5;
+        }
+
+        #autodon .icon,
+        .dubox_tit {
+            display: inline-block;
+        }
+
+        .dubox_l,
+        .dubox_r {
+            width: 100%;
+        }
+
+        #autodon .dubox:nth-child(2n+1) .dubox_l,
+        #autodon .dubox:nth-child(2n) .dubox_r {
+            order: 1;
+
+
+        }
+
+        #autodon .dubox:nth-child(2n) .dubox_l,
+        #autodon .dubox:nth-child(2n+1) .dubox_r {
+            position: relative;
+            padding: 0 20px;
+
+        }
+
+        #autodon .dubox:nth-child(2n) .dubox_l .icon>img,
+        #autodon .dubox:nth-child(2n+1) .dubox_r .icon>img {
+            width: 42px;
+            height: 42px;
+        }
+
+        #autodon .dubox:nth-child(2n) .dubox_tit,
+        #autodon .dubox:nth-child(2n+1) .dubox_tit {
+            position: absolute;
+            font-size: 27px;
+            left: 80px;
+            top: 0;
+        }
+    }
+</style>
+{{/block}}
+
+{{block "content"}}
+<div id="autodon">
+    <div class="autodon-banner">
+        <h2>Autodon</h2>
+        <p>有方自主研发</p>
+        <p>齿科正畸软件</p>
+    </div>
+    <div class="wrap">
+        <div class="tit">
+            <h2>让诊疗更专业，但操作又更简单</h2>
+            <p>多项智能化操作，大大提升诊疗效率和质量</p>
+        </div>
+        <div class="dubox">
+            <div class="dubox_l">
+                <div class="icon"><img src="/public/img/CT/autodon/sp1.png" alt=""></div>
+                <div class="dubox_tit">一键智能AI定点</div>
+                <div class="dubox_content">
+                    <p>•采用智能算法，AI定点准确性高</p>
+                    <p>•3S内完成一键自动描点，全面提升诊断效率</p>
+                    <p>•AI定点自动完成轮廓图描迹</p>
+                </div>
+            </div>
+            <div class="dubox_r">
+                <div class="icon"><img src="/public/img/CT/autodon/sp11.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="dubox">
+            <div class="dubox_l">
+                <div class="icon"><img src="/public/img/CT/autodon/sp21.jpg" alt=""></div>
+            </div>
+            <div class="dubox_r">
+                <div class="icon"><img src="/public/img/CT/autodon/sp2.png" alt=""></div>
+                <div class="dubox_tit">智能AI分析结果</div>
+                <div class="dubox_content">
+                    <p>•测量结果自动解读，准确把握患者整体信息</p>
+                    <p>•分析结果列表数值展示，异常数据直观呈现</p>
+                    <p>•分析结果项目界面可视化展示</p>
+                </div>
+            </div>
+        </div>
+        <div class="dubox">
+            <div class="dubox_l">
+                <div class="icon"><img src="/public/img/CT/autodon/sp3.svg" alt=""></div>
+                <div class="dubox_tit">图像重叠对比</div>
+                <div class="dubox_content">
+                    <p>•多阶段头颅侧位片自动重叠</p>
+                    <p>•直观展示诊疗前后的变化，便于医患沟通</p>
+                    <p>•支持重叠对比图像导出</p>
+                </div>
+            </div>
+            <div class="dubox_r">
+                <div class="icon"><img src="/public/img/CT/autodon/sp31.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="dubox">
+            <div class="dubox_l">
+                <div class="icon"><img src="/public/img/CT/autodon/sp41.jpg" alt=""></div>
+            </div>
+            <div class="dubox_r">
+                <div class="icon"><img src="/public/img/CT/autodon/sp4.png" alt=""></div>
+                <div class="dubox_tit">一键导出医学报告</div>
+                <div class="dubox_content">
+                    <p>•一键生成可视化医学报告</p>
+                    <p>•支持报告导出功能</p>
+                    <p>•支持切换用户自定义样本数据</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/block}}
+
+{{block "script"}}
+<script>
+
+</script>
+{{/block}}

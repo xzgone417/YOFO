@@ -1,0 +1,88 @@
+[{
+    "name": "正畸检查",
+    "href": "kouqiangzhengji",
+    "type": ["口腔正畸", "kouqiangzhengji"],
+    "img": ["/public/img/cases/口腔正畸01.png"]
+}, {
+    "name": "口腔种植",
+    "href": "kouqiangzhongzhi",
+    "type": ["口腔种植", "kouqiangzhongzhi"],
+    "img": [
+        "/public/img/cases/口腔种植01.jpg",
+        "/public/img/cases/口腔种植02.png",
+        "/public/img/cases/口腔种植03.jpg",
+        "/public/img/cases/口腔种植04.png",
+        "/public/img/cases/口腔种植05.png",
+        "/public/img/cases/口腔种植06.jpg",
+        "/public/img/cases/口腔种植07.jpg"
+    ]
+}, {
+    "name": "上颌窦间隔",
+    "href": "kouqianghemianwaike",
+    "type": ["口腔颌面外科", "kouqianghemianwaike", "zhuxianshen", "caoxiansheng-2"],
+    "img": ["/public/img/cases/上颌窦间隔01.bmp", "/public/img/cases/上颌窦间隔02.bmp"]
+}, {
+    "name": "下颌牙回袢",
+    "href": "zhuxianshen",
+    "type": ["口腔颌面外科", "kouqianghemianwaike", "zhuxianshen", "caoxiansheng-2"],
+    "img": ["/public/img/cases/下颌牙回袢01.png"]
+}, {
+    "name": "下颌牙神经变异",
+    "href": "caoxiansheng-2",
+    "type": ["口腔颌面外科", "kouqianghemianwaike", "zhuxianshen", "caoxiansheng-2"],
+    "img": ["/public/img/cases/下颌牙神经变异01.png", "/public/img/cases/下颌牙神经变异02.png"]
+}, {
+    "name": "多生牙",
+    "href": "duosyzsy",
+    "type": ["多生牙/阻生牙", "duosyzsy", "zhuxiansheng-2"],
+    "img": [
+        "/public/img/cases/多生牙01.bmp",
+        "/public/img/cases/多生牙02.bmp",
+        "/public/img/cases/多生牙03.bmp",
+        "/public/img/cases/多生牙04.bmp"
+    ]
+}, {
+    "name": "阻生牙",
+    "href": "zhuxiansheng-2",
+    "type": ["多生牙/阻生牙", "duosyzsy", "zhuxiansheng-2"],
+    "img": [
+        "/public/img/cases/阻生牙01.bmp",
+        "/public/img/cases/阻生牙02.bmp",
+        "/public/img/cases/阻生牙03.bmp"
+    ]
+}, {
+    "name": "根管治疗",
+    "href": "yatiyasuibing",
+    "type": ["牙体牙髓病", "yatiyasuibing", "caoxiansheng", "huangxiansheng"],
+    "img": [
+        "/public/img/cases/根管治疗01.bmp",
+        "/public/img/cases/根管治疗02.bmp",
+        "/public/img/cases/根管治疗03.bmp",
+        "/public/img/cases/根管治疗04.bmp"
+    ]
+}, {
+    "name": "根尖炎",
+    "href": "caoxiansheng",
+    "type": ["牙体牙髓病", "yatiyasuibing", "caoxiansheng", "huangxiansheng"],
+    "img": ["/public/img/cases/根尖炎01.bmp", "/public/img/cases/根尖炎02.bmp"]
+}, {
+    "name": "龋齿",
+    "href": "huangxiansheng",
+    "type": ["牙体牙髓病", "yatiyasuibing", "caoxiansheng", "huangxiansheng"],
+    "img": [
+        "/public/img/cases/龋齿01.bmp",
+        "/public/img/cases/龋齿02.bmp",
+        "/public/img/cases/龋齿03.bmp",
+        "/public/img/cases/龋齿04.bmp"
+    ]
+}, {
+    "name": "牙周炎",
+    "href": "yazhoubing",
+    "type": ["牙周病", "yazhoubing"],
+    "img": ["/public/img/cases/牙周炎01.png", "/public/img/cases/牙周炎02.png"]
+}, {
+    "name": "颞下颌关节检查",
+    "href": "niexiaheguanjie",
+    "type": ["颞下颌关节", "niexiaheguanjie"],
+    "img": ["/public/img/cases/颞下颌关节检查01.png"]
+}]
