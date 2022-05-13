@@ -677,7 +677,7 @@ footer{
     color: #fff;
     height:600px;
     position:relative;
-    top:3600px;
+    top:2800px;
  
 }
 
@@ -819,13 +819,9 @@ hr{
   opacity: .5;
 
 }
-/* .footer1 span:nth-child(2){
-  position: relative;
-left: 100px;
 
-}  */
 
-.footer2 {
+/* .footer2 {
   background: #262626;
     color: #fff;
     height:600px;
@@ -893,7 +889,7 @@ hr{
   right:-40px;
   opacity: .5;
 
-}
+} */
 
  
 
