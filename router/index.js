@@ -1,8 +1,8 @@
 // 引用模板和中间件
 const express = require("express");
 // 导入model中的js例如
-// const { find } = require("../model/test");//wode
-// const User = require("../model/test")//xzg的
+const { find } = require("../model/test");//wode
+const User = require("../model/test")//xzg的
 
 // 挂载中间件
 const path = require("path")
@@ -62,20 +62,40 @@ router.get("/technology", (req, res) => {
 })
 
 //TEST徐正罡写的 
-// router.post("/contact", async (req, res) => {
-//             let user = { user: req.session.user };
-//             await user.save()
-//           res.send("contact")
-//         }
-   
-   
-// )
-// // router.post("/contact", (req, res) => {
-// //     res.render("aboutUs/contact.html")
-// // })
-// router.get("/message", async (req, res) => {
-//     // res.render("aboutUs/message.html" )
-//     let data = await Test.find();
-//     res.render("aboutUs/message.html", { user: data })
-// })
+router.get("/login", (req, res) => {
+    res.render("login.html")
+})
+
+router.post("/contact", async (req, res, next) => {
+    try {
+        const { nickname, email, phonenumber, job } = req.body;
+        //根据email和nickname从数据库查询邮箱或者用户名是否已存在
+        let findUser = await User.findOne({ $or: [{ email }, { nickname }] })
+        //如果存在，则返回错误信息
+        if (findUser) {
+            res.json({
+                code: 2002,
+                message: "用户名或者邮箱已经存在"
+            })
+        }
+        //如果不存在，则保存用户信息，注册成功，并跳转登录页面
+        else {
+            //保存用户
+            let user = new User(req.body);
+            await user.save()
+            res.json({
+                code: 2000,
+                message: "注册成功"
+            })
+        }
+    }
+    catch (err) {
+        next(err)
+    }
+})
+
+
+
+
+
 module.exports = router;
