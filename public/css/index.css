@@ -689,6 +689,9 @@ footer .left img{
   right:640px;
   bottom:100px
 }
+footer .row{
+  height:500px
+}
 footer ul li{
   color: #fff;
   float: left;
@@ -758,6 +761,15 @@ left: 100px;
     position:relative;
     top:3600px;
 }
+.footer1 .row{
+  height:500px
+}
+.footer1 .row .foot{
+  height:0px
+}
+.footer1 .row .bottom{
+  height:0px
+}
 .footer1 .left img{
   position: relative;
  left:90px;
@@ -820,7 +832,12 @@ hr{
 
 }
 
-
+/* #all{
+  height: 5500px;
+} */
+/* .bb .right{
+  display: none;
+} */
 /* .footer2 {
   background: #262626;
     color: #fff;
